@@ -1,0 +1,53 @@
+2022-07-20 15:02:41 [main] INFO  net.serg.TwitterToKafkaApplication - Starting TwitterToKafkaApplication using Java 11.0.2 on WIN-226UIE1LGCG with PID 11720 (C:\Users\User\Desktop\epam_interanl_lab\microservices\twitter-to-kafka\target\classes started by User in C:\Users\User\Desktop\epam_interanl_lab\microservices)
+2022-07-20 15:02:41 [main] INFO  net.serg.TwitterToKafkaApplication - No active profile set, falling back to 1 default profile: "default"
+2022-07-20 15:02:42 [main] INFO  net.serg.TwitterToKafkaApplication - Started TwitterToKafkaApplication in 2.196 seconds (JVM running for 4.105)
+2022-07-20 15:02:42 [main] INFO  net.serg.TwitterToKafkaApplication - App starts
+2022-07-20 15:34:24 [main] INFO  net.serg.TwitterToKafkaApplication - Starting TwitterToKafkaApplication using Java 11.0.2 on WIN-226UIE1LGCG with PID 6952 (C:\Users\User\Desktop\epam_interanl_lab\microservices\twitter-to-kafka\target\classes started by User in C:\Users\User\Desktop\epam_interanl_lab\microservices)
+2022-07-20 15:34:24 [main] INFO  net.serg.TwitterToKafkaApplication - No active profile set, falling back to 1 default profile: "default"
+2022-07-20 15:34:25 [main] INFO  net.serg.TwitterToKafkaApplication - Started TwitterToKafkaApplication in 1.867 seconds (JVM running for 3.264)
+2022-07-20 15:34:25 [main] INFO  net.serg.TwitterToKafkaApplication - App starts
+2022-07-20 15:34:25 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-07-20 15:34:25 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:774)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:755)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at net.serg.TwitterToKafkaApplication.main(TwitterToKafkaApplication.java:22)
+Caused by: java.lang.NullPointerException: null
+	at net.serg.TwitterToKafkaApplication.run(TwitterToKafkaApplication.java:28)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:771)
+	... 5 common frames omitted
+2022-07-20 15:34:36 [main] INFO  net.serg.TwitterToKafkaApplication - Starting TwitterToKafkaApplication using Java 11.0.2 on WIN-226UIE1LGCG with PID 4920 (C:\Users\User\Desktop\epam_interanl_lab\microservices\twitter-to-kafka\target\classes started by User in C:\Users\User\Desktop\epam_interanl_lab\microservices)
+2022-07-20 15:34:36 [main] INFO  net.serg.TwitterToKafkaApplication - No active profile set, falling back to 1 default profile: "default"
+2022-07-20 15:34:37 [main] INFO  net.serg.TwitterToKafkaApplication - Started TwitterToKafkaApplication in 1.82 seconds (JVM running for 2.874)
+2022-07-20 15:34:37 [main] INFO  net.serg.TwitterToKafkaApplication - App starts
+2022-07-20 15:34:37 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-07-20 15:34:37 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:774)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:755)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at net.serg.TwitterToKafkaApplication.main(TwitterToKafkaApplication.java:22)
+Caused by: java.lang.NullPointerException: null
+	at net.serg.TwitterToKafkaApplication.run(TwitterToKafkaApplication.java:28)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:771)
+	... 5 common frames omitted
+2022-07-20 15:35:38 [main] INFO  net.serg.TwitterToKafkaApplication - Starting TwitterToKafkaApplication using Java 11.0.2 on WIN-226UIE1LGCG with PID 8732 (C:\Users\User\Desktop\epam_interanl_lab\microservices\twitter-to-kafka\target\classes started by User in C:\Users\User\Desktop\epam_interanl_lab\microservices)
+2022-07-20 15:35:38 [main] INFO  net.serg.TwitterToKafkaApplication - No active profile set, falling back to 1 default profile: "default"
+2022-07-20 15:35:39 [main] INFO  net.serg.TwitterToKafkaApplication - Started TwitterToKafkaApplication in 1.706 seconds (JVM running for 2.749)
+2022-07-20 15:35:39 [main] INFO  net.serg.TwitterToKafkaApplication - App starts
+2022-07-20 15:35:39 [main] INFO  net.serg.TwitterToKafkaApplication - [Java, Kafka, Spring]
+2022-07-20 15:45:51 [main] INFO  net.serg.TwitterToKafkaApplication - Starting TwitterToKafkaApplication using Java 11.0.2 on WIN-226UIE1LGCG with PID 10104 (C:\Users\User\Desktop\epam_interanl_lab\microservices\twitter-to-kafka\target\classes started by User in C:\Users\User\Desktop\epam_interanl_lab\microservices)
+2022-07-20 15:45:51 [main] INFO  net.serg.TwitterToKafkaApplication - No active profile set, falling back to 1 default profile: "default"
+2022-07-20 15:45:52 [main] INFO  net.serg.TwitterToKafkaApplication - Started TwitterToKafkaApplication in 1.721 seconds (JVM running for 2.722)
+2022-07-20 15:45:52 [main] INFO  net.serg.TwitterToKafkaApplication - App starts
+2022-07-20 15:45:52 [main] INFO  net.serg.TwitterToKafkaApplication - [Java, Kafka, Spring]
+2022-07-20 15:45:52 [main] INFO  net.serg.TwitterToKafkaApplication - hello
