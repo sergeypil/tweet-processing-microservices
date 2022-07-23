@@ -1,6 +1,6 @@
 package net.serg.runner.impl;
 
-import net.serg.config.KafkaConfigData;
+import net.serg.config.TwitterToKafkaConfigData;
 import net.serg.listener.TwitterKafkaStatusListener;
 import net.serg.runner.StreamRunner;
 import org.slf4j.Logger;
@@ -21,15 +21,15 @@ public class TwitterKafkaStreamRunner implements StreamRunner {
 
     private static final Logger LOG = LoggerFactory.getLogger(TwitterKafkaStreamRunner.class);
 
-    private final KafkaConfigData kafkaConfigData;
+    private final TwitterToKafkaConfigData twitterToKafkaConfigData;
 
     private final TwitterKafkaStatusListener twitterKafkaStatusListener;
 
     private TwitterStream twitterStream;
 
-    public TwitterKafkaStreamRunner(KafkaConfigData configData,
+    public TwitterKafkaStreamRunner(TwitterToKafkaConfigData configData,
                                     TwitterKafkaStatusListener statusListener) {
-        this.kafkaConfigData = configData;
+        this.twitterToKafkaConfigData = configData;
         this.twitterKafkaStatusListener = statusListener;
     }
 
@@ -49,7 +49,7 @@ public class TwitterKafkaStreamRunner implements StreamRunner {
     }
 
     private void addFilter() {
-        String[] keywords = kafkaConfigData.getTwitterKeywords().toArray(new String[0]);
+        String[] keywords = twitterToKafkaConfigData.getTwitterKeywords().toArray(new String[0]);
         FilterQuery filterQuery = new FilterQuery(keywords);
         twitterStream.filter(filterQuery);
         LOG.info("Started filtering twitter stream for keywords {}", Arrays.toString(keywords));

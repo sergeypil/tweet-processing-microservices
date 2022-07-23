@@ -8,12 +8,13 @@ import java.util.List;
 
 @Data
 @Configuration
-@ConfigurationProperties(prefix = "twitter-to-kafka")
+@ConfigurationProperties(prefix = "kafka-config")
 public class KafkaConfigData {
-    private List<String> twitterKeywords;
-    private String welcomeMessage;
-    private Boolean enableMockTweets;
-    private Long mockSleepMs;
-    private Integer mockMinTweetLength;
-    private Integer mockMaxTweetLength;
+    private String bootstrapServers;
+    private String schemaRegistryUrlKey;
+    private String schemaRegistryUrl;
+    private String topicName;
+    private List<String> topicNamesToCreate;
+    private Integer numOfPartitions;
+    private Short replicationFactor;
 }

@@ -1,0 +1,468 @@
+2022-07-21 12:53:37 [main] INFO  net.serg.TwitterToKafkaApplication - Starting TwitterToKafkaApplication using Java 11.0.2 on WIN-226UIE1LGCG with PID 528 (C:\Users\User\Desktop\epam_interanl_lab\microservices\twitter-to-kafka\target\classes started by User in C:\Users\User\Desktop\epam_interanl_lab\microservices)
+2022-07-21 12:53:37 [main] INFO  net.serg.TwitterToKafkaApplication - No active profile set, falling back to 1 default profile: "default"
+2022-07-21 12:53:38 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterToKafkaApplication': Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type 'net.serg.runner.StreamRunner' available: expected single matching bean but found 2: mockKafkaStreamRunner,twitterKafkaStreamRunner
+2022-07-21 12:53:39 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-07-21 12:53:39 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of constructor in net.serg.TwitterToKafkaApplication required a single bean, but 2 were found:
+	- mockKafkaStreamRunner: defined in file [C:\Users\User\Desktop\epam_interanl_lab\microservices\twitter-to-kafka\target\classes\net\serg\runner\impl\MockKafkaStreamRunner.class]
+	- twitterKafkaStreamRunner: defined in file [C:\Users\User\Desktop\epam_interanl_lab\microservices\twitter-to-kafka\target\classes\net\serg\runner\impl\TwitterKafkaStreamRunner.class]
+
+
+Action:
+
+Consider marking one of the beans as @Primary, updating the consumer to accept multiple beans, or using @Qualifier to identify the bean that should be consumed
+
+2022-07-21 12:54:44 [main] INFO  net.serg.TwitterToKafkaApplication - Starting TwitterToKafkaApplication using Java 11.0.2 on WIN-226UIE1LGCG with PID 7240 (C:\Users\User\Desktop\epam_interanl_lab\microservices\twitter-to-kafka\target\classes started by User in C:\Users\User\Desktop\epam_interanl_lab\microservices)
+2022-07-21 12:54:44 [main] INFO  net.serg.TwitterToKafkaApplication - No active profile set, falling back to 1 default profile: "default"
+2022-07-21 12:54:45 [main] INFO  net.serg.TwitterToKafkaApplication - Started TwitterToKafkaApplication in 1.826 seconds (JVM running for 2.966)
+2022-07-21 12:54:45 [main] INFO  net.serg.TwitterToKafkaApplication - App starts
+2022-07-21 12:54:45 [main] INFO  net.serg.TwitterToKafkaApplication - [Java, Kafka, Spring]
+2022-07-21 12:54:45 [main] INFO  net.serg.TwitterToKafkaApplication - Hello microservices!
+2022-07-21 12:54:45 [main] INFO  n.s.r.impl.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Kafka, Spring]
+2022-07-21 12:54:45 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-07-21 12:54:45 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:774)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:755)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at net.serg.TwitterToKafkaApplication.main(TwitterToKafkaApplication.java:25)
+Caused by: twitter4j.TwitterException: Unexpected date format(чт июл. 21 12:54:45 ALMT 2022) returned from twitter.com
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:115)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:94)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:86)
+	at twitter4j.StatusJSONImpl.init(StatusJSONImpl.java:102)
+	at twitter4j.StatusJSONImpl.<init>(StatusJSONImpl.java:91)
+	at twitter4j.TwitterObjectFactory.createStatus(TwitterObjectFactory.java:55)
+	at net.serg.runner.impl.MockKafkaStreamRunner.start(MockKafkaStreamRunner.java:82)
+	at net.serg.TwitterToKafkaApplication.run(TwitterToKafkaApplication.java:33)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:771)
+	... 5 common frames omitted
+Caused by: java.text.ParseException: Unparseable date: "чт июл. 21 12:54:45 ALMT 2022"
+	at java.base/java.text.DateFormat.parse(DateFormat.java:395)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:113)
+	... 13 common frames omitted
+2022-07-21 13:07:09 [main] INFO  net.serg.TwitterToKafkaApplication - Starting TwitterToKafkaApplication using Java 11.0.2 on WIN-226UIE1LGCG with PID 8324 (C:\Users\User\Desktop\epam_interanl_lab\microservices\twitter-to-kafka\target\classes started by User in C:\Users\User\Desktop\epam_interanl_lab\microservices)
+2022-07-21 13:07:09 [main] INFO  net.serg.TwitterToKafkaApplication - No active profile set, falling back to 1 default profile: "default"
+2022-07-21 13:07:10 [main] INFO  net.serg.TwitterToKafkaApplication - Started TwitterToKafkaApplication in 2.828 seconds (JVM running for 5.672)
+2022-07-21 13:07:10 [main] INFO  net.serg.TwitterToKafkaApplication - App starts
+2022-07-21 13:07:10 [main] INFO  net.serg.TwitterToKafkaApplication - [Java, Kafka, Spring]
+2022-07-21 13:07:10 [main] INFO  net.serg.TwitterToKafkaApplication - Hello microservices!
+2022-07-21 13:07:10 [main] INFO  n.s.r.impl.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Kafka, Spring]
+2022-07-21 13:07:11 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-07-21 13:07:11 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:774)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:755)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at net.serg.TwitterToKafkaApplication.main(TwitterToKafkaApplication.java:25)
+Caused by: twitter4j.TwitterException: Unexpected date format(чт июл. 21 13:07:10 ALMT 2022) returned from twitter.com
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:115)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:94)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:86)
+	at twitter4j.StatusJSONImpl.init(StatusJSONImpl.java:102)
+	at twitter4j.StatusJSONImpl.<init>(StatusJSONImpl.java:91)
+	at twitter4j.TwitterObjectFactory.createStatus(TwitterObjectFactory.java:55)
+	at net.serg.runner.impl.MockKafkaStreamRunner.start(MockKafkaStreamRunner.java:82)
+	at net.serg.TwitterToKafkaApplication.run(TwitterToKafkaApplication.java:33)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:771)
+	... 5 common frames omitted
+Caused by: java.text.ParseException: Unparseable date: "чт июл. 21 13:07:10 ALMT 2022"
+	at java.base/java.text.DateFormat.parse(DateFormat.java:395)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:113)
+	... 13 common frames omitted
+2022-07-21 13:09:20 [main] INFO  net.serg.TwitterToKafkaApplication - Starting TwitterToKafkaApplication using Java 11.0.2 on WIN-226UIE1LGCG with PID 6020 (C:\Users\User\Desktop\epam_interanl_lab\microservices\twitter-to-kafka\target\classes started by User in C:\Users\User\Desktop\epam_interanl_lab\microservices)
+2022-07-21 13:09:20 [main] INFO  net.serg.TwitterToKafkaApplication - No active profile set, falling back to 1 default profile: "default"
+2022-07-21 13:09:22 [main] INFO  net.serg.TwitterToKafkaApplication - Started TwitterToKafkaApplication in 3.03 seconds (JVM running for 4.703)
+2022-07-21 13:09:22 [main] INFO  net.serg.TwitterToKafkaApplication - App starts
+2022-07-21 13:09:22 [main] INFO  net.serg.TwitterToKafkaApplication - [Java, Kafka, Spring]
+2022-07-21 13:09:22 [main] INFO  net.serg.TwitterToKafkaApplication - Hello microservices!
+2022-07-21 13:09:35 [main] INFO  n.s.r.impl.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Kafka, Spring]
+2022-07-21 13:10:13 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-07-21 13:10:13 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:774)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:755)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at net.serg.TwitterToKafkaApplication.main(TwitterToKafkaApplication.java:25)
+Caused by: twitter4j.TwitterException: Unexpected date format(чт июл. 21 13:09:50 ALMT 2022) returned from twitter.com
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:115)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:94)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:86)
+	at twitter4j.StatusJSONImpl.init(StatusJSONImpl.java:102)
+	at twitter4j.StatusJSONImpl.<init>(StatusJSONImpl.java:91)
+	at twitter4j.TwitterObjectFactory.createStatus(TwitterObjectFactory.java:55)
+	at net.serg.runner.impl.MockKafkaStreamRunner.start(MockKafkaStreamRunner.java:82)
+	at net.serg.TwitterToKafkaApplication.run(TwitterToKafkaApplication.java:33)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:771)
+	... 5 common frames omitted
+Caused by: java.text.ParseException: Unparseable date: "чт июл. 21 13:09:50 ALMT 2022"
+	at java.base/java.text.DateFormat.parse(DateFormat.java:395)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:113)
+	... 13 common frames omitted
+2022-07-21 13:18:26 [main] INFO  net.serg.TwitterToKafkaApplication - Starting TwitterToKafkaApplication using Java 11.0.2 on WIN-226UIE1LGCG with PID 1800 (C:\Users\User\Desktop\epam_interanl_lab\microservices\twitter-to-kafka\target\classes started by User in C:\Users\User\Desktop\epam_interanl_lab\microservices)
+2022-07-21 13:18:26 [main] INFO  net.serg.TwitterToKafkaApplication - No active profile set, falling back to 1 default profile: "default"
+2022-07-21 13:18:27 [main] INFO  net.serg.TwitterToKafkaApplication - Started TwitterToKafkaApplication in 2.788 seconds (JVM running for 4.907)
+2022-07-21 13:18:27 [main] INFO  net.serg.TwitterToKafkaApplication - App starts
+2022-07-21 13:18:27 [main] INFO  net.serg.TwitterToKafkaApplication - [Java, Kafka, Spring]
+2022-07-21 13:18:27 [main] INFO  net.serg.TwitterToKafkaApplication - Hello microservices!
+2022-07-21 13:18:27 [main] INFO  n.s.r.impl.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Kafka, Spring]
+2022-07-21 13:23:15 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-07-21 13:23:15 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:774)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:755)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at net.serg.TwitterToKafkaApplication.main(TwitterToKafkaApplication.java:25)
+Caused by: twitter4j.TwitterException: Unexpected date format(чт июл. 21 13:18:29 ALMT 2022) returned from twitter.com
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:115)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:94)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:86)
+	at twitter4j.StatusJSONImpl.init(StatusJSONImpl.java:102)
+	at twitter4j.StatusJSONImpl.<init>(StatusJSONImpl.java:91)
+	at twitter4j.TwitterObjectFactory.createStatus(TwitterObjectFactory.java:55)
+	at net.serg.runner.impl.MockKafkaStreamRunner.start(MockKafkaStreamRunner.java:82)
+	at net.serg.TwitterToKafkaApplication.run(TwitterToKafkaApplication.java:33)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:771)
+	... 5 common frames omitted
+Caused by: java.text.ParseException: Unparseable date: "чт июл. 21 13:18:29 ALMT 2022"
+	at java.base/java.text.DateFormat.parse(DateFormat.java:395)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:113)
+	... 13 common frames omitted
+2022-07-21 13:23:25 [main] INFO  net.serg.TwitterToKafkaApplication - Starting TwitterToKafkaApplication using Java 11.0.2 on WIN-226UIE1LGCG with PID 6716 (C:\Users\User\Desktop\epam_interanl_lab\microservices\twitter-to-kafka\target\classes started by User in C:\Users\User\Desktop\epam_interanl_lab\microservices)
+2022-07-21 13:23:25 [main] INFO  net.serg.TwitterToKafkaApplication - No active profile set, falling back to 1 default profile: "default"
+2022-07-21 13:23:26 [main] INFO  net.serg.TwitterToKafkaApplication - Started TwitterToKafkaApplication in 2.551 seconds (JVM running for 4.242)
+2022-07-21 13:23:26 [main] INFO  net.serg.TwitterToKafkaApplication - App starts
+2022-07-21 13:23:26 [main] INFO  net.serg.TwitterToKafkaApplication - [Java, Kafka, Spring]
+2022-07-21 13:23:26 [main] INFO  net.serg.TwitterToKafkaApplication - Hello microservices!
+2022-07-21 13:23:26 [main] INFO  n.s.r.impl.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Kafka, Spring]
+2022-07-21 13:23:28 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-07-21 13:23:28 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:774)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:755)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at net.serg.TwitterToKafkaApplication.main(TwitterToKafkaApplication.java:25)
+Caused by: java.time.zone.ZoneRulesException: Unknown time-zone ID: PST
+	at java.base/java.time.zone.ZoneRulesProvider.getProvider(ZoneRulesProvider.java:279)
+	at java.base/java.time.zone.ZoneRulesProvider.getRules(ZoneRulesProvider.java:234)
+	at java.base/java.time.ZoneRegion.ofId(ZoneRegion.java:120)
+	at java.base/java.time.ZoneId.of(ZoneId.java:408)
+	at java.base/java.time.ZoneId.of(ZoneId.java:356)
+	at net.serg.runner.impl.MockKafkaStreamRunner.getFormattedTweet(MockKafkaStreamRunner.java:99)
+	at net.serg.runner.impl.MockKafkaStreamRunner.start(MockKafkaStreamRunner.java:82)
+	at net.serg.TwitterToKafkaApplication.run(TwitterToKafkaApplication.java:33)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:771)
+	... 5 common frames omitted
+2022-07-21 13:25:10 [main] INFO  net.serg.TwitterToKafkaApplication - Starting TwitterToKafkaApplication using Java 11.0.2 on WIN-226UIE1LGCG with PID 7256 (C:\Users\User\Desktop\epam_interanl_lab\microservices\twitter-to-kafka\target\classes started by User in C:\Users\User\Desktop\epam_interanl_lab\microservices)
+2022-07-21 13:25:10 [main] INFO  net.serg.TwitterToKafkaApplication - No active profile set, falling back to 1 default profile: "default"
+2022-07-21 13:25:12 [main] INFO  net.serg.TwitterToKafkaApplication - Started TwitterToKafkaApplication in 2.955 seconds (JVM running for 4.961)
+2022-07-21 13:25:12 [main] INFO  net.serg.TwitterToKafkaApplication - App starts
+2022-07-21 13:25:12 [main] INFO  net.serg.TwitterToKafkaApplication - [Java, Kafka, Spring]
+2022-07-21 13:25:12 [main] INFO  net.serg.TwitterToKafkaApplication - Hello microservices!
+2022-07-21 13:25:12 [main] INFO  n.s.r.impl.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Kafka, Spring]
+2022-07-21 13:25:14 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-07-21 13:25:14 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:774)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:755)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at net.serg.TwitterToKafkaApplication.main(TwitterToKafkaApplication.java:25)
+Caused by: java.time.zone.ZoneRulesException: Unknown time-zone ID: UTS
+	at java.base/java.time.zone.ZoneRulesProvider.getProvider(ZoneRulesProvider.java:279)
+	at java.base/java.time.zone.ZoneRulesProvider.getRules(ZoneRulesProvider.java:234)
+	at java.base/java.time.ZoneRegion.ofId(ZoneRegion.java:120)
+	at java.base/java.time.ZoneId.ofWithPrefix(ZoneId.java:425)
+	at java.base/java.time.ZoneId.of(ZoneId.java:406)
+	at java.base/java.time.ZoneId.of(ZoneId.java:356)
+	at net.serg.runner.impl.MockKafkaStreamRunner.getFormattedTweet(MockKafkaStreamRunner.java:99)
+	at net.serg.runner.impl.MockKafkaStreamRunner.start(MockKafkaStreamRunner.java:82)
+	at net.serg.TwitterToKafkaApplication.run(TwitterToKafkaApplication.java:33)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:771)
+	... 5 common frames omitted
+2022-07-21 13:25:25 [main] INFO  net.serg.TwitterToKafkaApplication - Starting TwitterToKafkaApplication using Java 11.0.2 on WIN-226UIE1LGCG with PID 9500 (C:\Users\User\Desktop\epam_interanl_lab\microservices\twitter-to-kafka\target\classes started by User in C:\Users\User\Desktop\epam_interanl_lab\microservices)
+2022-07-21 13:25:25 [main] INFO  net.serg.TwitterToKafkaApplication - No active profile set, falling back to 1 default profile: "default"
+2022-07-21 13:25:27 [main] INFO  net.serg.TwitterToKafkaApplication - Started TwitterToKafkaApplication in 3.384 seconds (JVM running for 5.595)
+2022-07-21 13:25:27 [main] INFO  net.serg.TwitterToKafkaApplication - App starts
+2022-07-21 13:25:27 [main] INFO  net.serg.TwitterToKafkaApplication - [Java, Kafka, Spring]
+2022-07-21 13:25:27 [main] INFO  net.serg.TwitterToKafkaApplication - Hello microservices!
+2022-07-21 13:25:27 [main] INFO  n.s.r.impl.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Kafka, Spring]
+2022-07-21 13:25:38 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-07-21 13:25:39 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:774)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:755)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at net.serg.TwitterToKafkaApplication.main(TwitterToKafkaApplication.java:25)
+Caused by: twitter4j.TwitterException: Unexpected date format(чт июл. 21 07:25:30 UTC 2022) returned from twitter.com
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:115)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:94)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:86)
+	at twitter4j.StatusJSONImpl.init(StatusJSONImpl.java:102)
+	at twitter4j.StatusJSONImpl.<init>(StatusJSONImpl.java:91)
+	at twitter4j.TwitterObjectFactory.createStatus(TwitterObjectFactory.java:55)
+	at net.serg.runner.impl.MockKafkaStreamRunner.start(MockKafkaStreamRunner.java:83)
+	at net.serg.TwitterToKafkaApplication.run(TwitterToKafkaApplication.java:33)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:771)
+	... 5 common frames omitted
+Caused by: java.text.ParseException: Unparseable date: "чт июл. 21 07:25:30 UTC 2022"
+	at java.base/java.text.DateFormat.parse(DateFormat.java:395)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:113)
+	... 13 common frames omitted
+2022-07-21 13:28:55 [main] INFO  net.serg.TwitterToKafkaApplication - Starting TwitterToKafkaApplication using Java 11.0.2 on WIN-226UIE1LGCG with PID 6212 (C:\Users\User\Desktop\epam_interanl_lab\microservices\twitter-to-kafka\target\classes started by User in C:\Users\User\Desktop\epam_interanl_lab\microservices)
+2022-07-21 13:28:55 [main] INFO  net.serg.TwitterToKafkaApplication - No active profile set, falling back to 1 default profile: "default"
+2022-07-21 13:28:57 [main] INFO  net.serg.TwitterToKafkaApplication - Started TwitterToKafkaApplication in 2.655 seconds (JVM running for 4.418)
+2022-07-21 13:28:57 [main] INFO  net.serg.TwitterToKafkaApplication - App starts
+2022-07-21 13:28:57 [main] INFO  net.serg.TwitterToKafkaApplication - [Java, Kafka, Spring]
+2022-07-21 13:28:57 [main] INFO  net.serg.TwitterToKafkaApplication - Hello microservices!
+2022-07-21 13:28:57 [main] INFO  n.s.r.impl.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Kafka, Spring]
+2022-07-21 13:38:53 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text consectetuer libero amet magna Java purus sit sending to kafka topic {}
+2022-07-21 13:39:13 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text dolor consectetuer dolor pulvinar Kafka massa congue sending to kafka topic {}
+2022-07-21 13:39:23 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text malesuada amet sit amet magna porttitor posuere Fusce Spring pulvinar elit posuere ultricies elit amet sending to kafka topic {}
+2022-07-21 13:39:33 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text pulvinar sed purus Fusce Kafka ultricies adipiscing sending to kafka topic {}
+2022-07-21 13:39:43 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text Lorem lectus Fusce elit massa libero Spring pulvinar posuere sed malesuada sending to kafka topic {}
+2022-07-21 13:39:53 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text purus congue congue Fusce ultricies Maecenas magna Maecenas Kafka massa Maecenas porttitor libero sit elit posuere sending to kafka topic {}
+2022-07-21 13:40:03 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text ultricies dolor magna malesuada ipsum Kafka lectus libero massa sending to kafka topic {}
+2022-07-21 13:40:13 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text sed Maecenas Lorem congue elit dolor adipiscing Kafka consectetuer amet Lorem massa pulvinar consectetuer sending to kafka topic {}
+2022-07-21 13:40:23 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text pulvinar lectus consectetuer ultricies porttitor sed ipsum Kafka purus porttitor ultricies lectus Maecenas Maecenas sending to kafka topic {}
+2022-07-21 13:40:33 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text lectus lectus posuere massa Maecenas Maecenas consectetuer Kafka porttitor libero magna Lorem sed sending to kafka topic {}
+2022-07-21 13:40:43 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text sit purus ultricies sed Java purus ipsum sending to kafka topic {}
+2022-07-21 13:40:53 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text Lorem pulvinar elit dolor posuere Java ultricies sit sit sending to kafka topic {}
+2022-07-21 13:41:03 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text porttitor sed massa dolor Maecenas Lorem Kafka sed lectus ipsum lectus elit sending to kafka topic {}
+2022-07-21 13:41:13 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text posuere Fusce sed sed amet Maecenas pulvinar Lorem Spring dolor purus adipiscing malesuada Fusce adipiscing elit sending to kafka topic {}
+2022-07-21 13:41:23 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text Maecenas Fusce Maecenas dolor Spring sed porttitor sending to kafka topic {}
+2022-07-21 13:41:33 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text magna malesuada libero Spring porttitor ipsum sending to kafka topic {}
+2022-07-21 13:41:43 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text ultricies purus dolor sed pulvinar Java consectetuer lectus Lorem porttitor sending to kafka topic {}
+2022-07-21 13:41:53 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text ipsum Fusce adipiscing congue Spring Maecenas ultricies sending to kafka topic {}
+2022-07-21 13:42:03 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text sed posuere sed Lorem congue Kafka sit posuere magna Maecenas sending to kafka topic {}
+2022-07-21 13:42:13 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text congue ultricies adipiscing posuere Java massa sit sending to kafka topic {}
+2022-07-21 13:42:23 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text posuere adipiscing libero consectetuer amet Java consectetuer pulvinar elit sending to kafka topic {}
+2022-07-21 13:42:33 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text purus adipiscing elit lectus pulvinar magna Lorem Spring amet lectus elit libero congue consectetuer sending to kafka topic {}
+2022-07-21 13:42:43 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text amet consectetuer congue sit Spring posuere magna sending to kafka topic {}
+2022-07-21 13:42:53 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text Lorem pulvinar Lorem lectus sit dolor Fusce Spring porttitor elit purus porttitor congue sending to kafka topic {}
+2022-07-21 13:43:03 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text porttitor sit magna posuere malesuada Kafka Lorem purus ultricies sending to kafka topic {}
+2022-07-21 13:43:13 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text libero Lorem congue magna Maecenas malesuada Java sed ultricies posuere pulvinar sending to kafka topic {}
+2022-07-21 13:43:23 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text sed magna magna Java massa purus sending to kafka topic {}
+2022-07-21 13:43:33 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text libero Maecenas magna Spring magna adipiscing sending to kafka topic {}
+2022-07-21 13:43:43 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text magna congue posuere posuere elit Fusce Java porttitor consectetuer magna sed sending to kafka topic {}
+2022-07-21 13:43:53 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text Lorem porttitor sed elit consectetuer Kafka porttitor lectus sit sending to kafka topic {}
+2022-07-21 13:44:03 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text ultricies malesuada purus sit purus lectus lectus Spring lectus elit lectus sit dolor sending to kafka topic {}
+2022-07-21 13:44:13 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text sit sit elit ipsum posuere Fusce Kafka adipiscing porttitor ipsum ipsum sending to kafka topic {}
+2022-07-21 13:44:23 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text elit massa massa magna pulvinar magna posuere consectetuer Kafka consectetuer porttitor adipiscing sit pulvinar purus adipiscing sending to kafka topic {}
+2022-07-21 13:44:33 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text amet congue libero purus amet porttitor malesuada Spring elit purus lectus sed posuere sending to kafka topic {}
+2022-07-21 13:44:43 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text amet magna Fusce libero congue porttitor Spring elit libero adipiscing magna sending to kafka topic {}
+2022-07-21 13:44:53 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text porttitor lectus lectus pulvinar Lorem libero Spring Fusce dolor massa ultricies sending to kafka topic {}
+2022-07-21 13:45:03 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text pulvinar Fusce ultricies magna sed Maecenas Maecenas malesuada Kafka lectus adipiscing dolor libero magna elit Fusce sending to kafka topic {}
+2022-07-21 13:45:13 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text dolor porttitor pulvinar Fusce Java sed ultricies sending to kafka topic {}
+2022-07-21 13:45:23 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text libero libero ipsum Spring ipsum Maecenas sending to kafka topic {}
+2022-07-21 13:45:33 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text massa amet porttitor malesuada massa Java Fusce consectetuer massa sending to kafka topic {}
+2022-07-21 13:45:43 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text porttitor massa porttitor congue sed magna malesuada ipsum Java elit adipiscing ipsum sed ipsum sed congue sending to kafka topic {}
+2022-07-21 13:45:53 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text lectus sed Lorem Maecenas Maecenas Java massa Lorem porttitor sending to kafka topic {}
+2022-07-21 13:46:03 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text dolor lectus pulvinar posuere Fusce purus Java ultricies posuere consectetuer consectetuer adipiscing sending to kafka topic {}
+2022-07-21 13:46:13 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text malesuada libero pulvinar Spring ipsum Lorem sending to kafka topic {}
+2022-07-21 13:46:23 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text dolor elit congue congue Fusce elit purus Kafka libero magna libero sit sed sending to kafka topic {}
+2022-07-21 13:46:33 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text consectetuer congue consectetuer purus Maecenas elit ipsum pulvinar Spring purus consectetuer Fusce dolor ipsum amet sending to kafka topic {}
+2022-07-21 13:46:43 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text dolor libero adipiscing ultricies malesuada Spring Maecenas ipsum porttitor sending to kafka topic {}
+2022-07-21 13:46:53 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text posuere Fusce Maecenas Fusce congue adipiscing malesuada congue Kafka massa Maecenas lectus lectus dolor magna sending to kafka topic {}
+2022-07-21 13:47:03 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text adipiscing sed sed congue Spring Maecenas congue sending to kafka topic {}
+2022-07-21 13:47:13 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text magna congue massa purus Fusce amet Spring dolor Lorem magna porttitor Fusce sending to kafka topic {}
+2022-07-21 13:47:23 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text ultricies Fusce porttitor sit purus Maecenas porttitor Java Fusce elit libero ipsum pulvinar sending to kafka topic {}
+2022-07-21 13:47:33 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text lectus malesuada adipiscing congue malesuada ipsum Java posuere consectetuer adipiscing congue magna sending to kafka topic {}
+2022-07-21 13:47:43 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text purus porttitor massa ipsum Spring lectus libero sending to kafka topic {}
+2022-07-21 13:47:54 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text sed pulvinar sit posuere pulvinar Lorem porttitor Spring libero amet adipiscing sed Maecenas sending to kafka topic {}
+2022-07-21 13:48:04 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text massa purus pulvinar adipiscing Java Fusce Maecenas dolor sending to kafka topic {}
+2022-07-21 13:48:14 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text ipsum magna porttitor malesuada malesuada Java amet porttitor consectetuer sending to kafka topic {}
+2022-07-21 13:48:24 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text Maecenas ipsum purus Kafka sed malesuada sending to kafka topic {}
+2022-07-21 13:48:34 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text pulvinar elit pulvinar malesuada massa elit porttitor porttitor Java congue dolor Fusce amet amet sed sending to kafka topic {}
+2022-07-21 13:48:44 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text Maecenas magna consectetuer Fusce adipiscing Lorem Kafka magna porttitor posuere Lorem magna sending to kafka topic {}
+2022-07-21 13:48:54 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text magna ultricies massa consectetuer Spring Lorem ipsum sending to kafka topic {}
+2022-07-21 13:49:04 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text Lorem magna Maecenas Fusce amet Java lectus ultricies adipiscing sending to kafka topic {}
+2022-07-21 13:49:14 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text elit magna ipsum porttitor Java amet massa sending to kafka topic {}
+2022-07-21 13:49:24 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text magna sit magna Fusce sed Maecenas Java elit sed consectetuer adipiscing sending to kafka topic {}
+2022-07-21 13:49:34 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text lectus consectetuer pulvinar lectus ipsum sed Spring libero elit posuere purus sending to kafka topic {}
+2022-07-21 13:49:44 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text lectus posuere Maecenas Fusce Lorem dolor amet lectus Kafka consectetuer elit massa purus libero congue congue sending to kafka topic {}
+2022-07-21 13:49:54 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text adipiscing Lorem consectetuer malesuada congue elit purus Lorem Kafka malesuada magna sit pulvinar Lorem massa sit sending to kafka topic {}
+2022-07-21 13:50:04 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text Fusce amet congue sit sit malesuada Spring ultricies libero massa amet amet sending to kafka topic {}
+2022-07-21 13:50:14 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text adipiscing lectus Fusce Spring ipsum adipiscing sending to kafka topic {}
+2022-07-21 13:50:24 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text purus purus ultricies sit porttitor congue Spring sit porttitor Maecenas ipsum sit sending to kafka topic {}
+2022-07-21 13:50:34 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text congue adipiscing massa porttitor posuere consectetuer ipsum porttitor Java sit pulvinar lectus Fusce adipiscing sit sending to kafka topic {}
+2022-07-21 13:50:44 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text congue ultricies dolor elit pulvinar Spring purus lectus congue sending to kafka topic {}
+2022-07-21 13:50:54 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text amet lectus ultricies malesuada Spring elit consectetuer sending to kafka topic {}
+2022-07-21 13:51:04 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text ultricies pulvinar amet sed porttitor adipiscing Java magna malesuada amet malesuada purus sending to kafka topic {}
+2022-07-21 13:51:14 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text massa Lorem consectetuer ipsum Lorem pulvinar Java sed malesuada pulvinar sit amet sending to kafka topic {}
+2022-07-21 13:51:24 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text purus elit massa massa sed Spring porttitor pulvinar Maecenas porttitor sending to kafka topic {}
+2022-07-21 13:51:34 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text massa congue pulvinar consectetuer magna adipiscing Spring magna porttitor sit ultricies purus sending to kafka topic {}
+2022-07-21 13:51:44 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text Maecenas Lorem Maecenas malesuada amet Kafka sit magna magna sending to kafka topic {}
+2022-07-21 13:51:54 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text consectetuer sed massa Spring massa congue sending to kafka topic {}
+2022-07-21 13:52:04 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text adipiscing massa Maecenas lectus massa Maecenas Java Lorem Lorem adipiscing ultricies malesuada sending to kafka topic {}
+2022-07-21 13:52:14 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text elit Fusce adipiscing malesuada amet amet porttitor posuere Kafka consectetuer congue massa libero adipiscing dolor sed sending to kafka topic {}
+2022-07-21 13:52:24 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text sit porttitor congue Lorem amet consectetuer malesuada adipiscing Java Fusce purus sit libero amet libero sending to kafka topic {}
+2022-07-21 13:52:34 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text pulvinar ultricies amet magna lectus purus Spring posuere massa purus sit porttitor sending to kafka topic {}
+2022-07-21 13:52:44 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text amet consectetuer dolor porttitor magna Java Lorem Maecenas magna magna sending to kafka topic {}
+2022-07-21 13:52:54 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text elit Fusce sit sit Java porttitor Fusce sending to kafka topic {}
+2022-07-21 13:53:04 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text sed libero lectus Fusce posuere consectetuer malesuada Kafka Maecenas adipiscing congue Maecenas Lorem sending to kafka topic {}
+2022-07-21 13:53:14 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text lectus ultricies sit malesuada dolor Kafka elit Fusce malesuada sending to kafka topic {}
+2022-07-21 13:53:24 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text sit sed libero dolor magna Maecenas amet Kafka sit sed porttitor sit posuere pulvinar sending to kafka topic {}
+2022-07-21 13:53:34 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text elit ultricies posuere Fusce congue porttitor amet sed Java sit sed ipsum purus Maecenas Lorem sending to kafka topic {}
+2022-07-21 13:53:44 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text sit sed sit adipiscing adipiscing magna Kafka purus massa pulvinar amet sending to kafka topic {}
+2022-07-21 13:53:54 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text ultricies Fusce Lorem consectetuer malesuada Java consectetuer lectus congue sending to kafka topic {}
+2022-07-21 13:54:04 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text amet magna amet Spring libero adipiscing sending to kafka topic {}
+2022-07-21 13:54:14 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text pulvinar ipsum porttitor porttitor lectus congue magna Java pulvinar elit elit elit amet sed sending to kafka topic {}
+2022-07-21 13:54:24 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text purus posuere congue amet sed sed Spring porttitor magna elit sed sending to kafka topic {}
+2022-07-21 13:54:34 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text malesuada dolor massa elit consectetuer Kafka elit amet ipsum posuere sending to kafka topic {}
+2022-07-21 13:54:44 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text Fusce amet consectetuer libero Java porttitor Maecenas sending to kafka topic {}
+2022-07-21 13:54:54 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text porttitor magna ultricies Spring lectus lectus sending to kafka topic {}
+2022-07-21 13:55:04 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text libero elit purus pulvinar sed porttitor Java amet adipiscing porttitor dolor sending to kafka topic {}
+2022-07-21 13:55:14 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text amet massa sed ipsum Maecenas Java massa sit elit magna sending to kafka topic {}
+2022-07-21 13:55:24 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text Lorem sit Fusce Lorem sit porttitor Spring ipsum Maecenas massa malesuada sending to kafka topic {}
+2022-07-21 13:55:34 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text consectetuer libero malesuada malesuada libero sed adipiscing Spring purus consectetuer massa Lorem Fusce sending to kafka topic {}
+2022-07-21 13:55:44 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text congue elit libero pulvinar magna pulvinar Lorem posuere Java pulvinar consectetuer adipiscing pulvinar magna congue dolor sending to kafka topic {}
+2022-07-21 13:55:54 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text consectetuer sed pulvinar Maecenas adipiscing consectetuer Kafka Maecenas sed Lorem lectus sending to kafka topic {}
+2022-07-21 13:56:04 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text Fusce amet lectus libero libero adipiscing Kafka libero pulvinar Maecenas massa sed sending to kafka topic {}
+2022-07-21 13:56:14 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text Maecenas massa elit ultricies elit Kafka Fusce massa lectus sending to kafka topic {}
+2022-07-21 13:56:24 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text lectus Maecenas purus sit amet Java massa lectus Maecenas ultricies sending to kafka topic {}
+2022-07-21 13:56:34 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text ultricies posuere lectus posuere Kafka purus Maecenas Maecenas sending to kafka topic {}
+2022-07-21 13:56:44 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text purus massa ultricies lectus ipsum amet elit dolor Spring Maecenas congue congue malesuada sed lectus lectus sending to kafka topic {}
+2022-07-21 13:56:54 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text purus posuere massa dolor congue porttitor posuere ipsum Spring massa adipiscing pulvinar lectus massa ultricies Maecenas sending to kafka topic {}
+2022-07-21 13:57:04 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text consectetuer malesuada malesuada Java malesuada adipiscing sending to kafka topic {}
+2022-07-21 13:57:14 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text adipiscing congue libero consectetuer sed magna Spring Maecenas adipiscing sed massa sending to kafka topic {}
+2022-07-21 13:57:24 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text sed dolor elit lectus sit sit Spring sed magna elit pulvinar congue sending to kafka topic {}
+2022-07-21 13:57:34 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text porttitor purus ultricies posuere dolor congue amet ipsum Spring porttitor Maecenas ultricies libero adipiscing ultricies lectus sending to kafka topic {}
+2022-07-21 13:57:44 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text malesuada sit pulvinar lectus Java consectetuer sed sending to kafka topic {}
+2022-07-21 13:57:54 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text dolor pulvinar Lorem Spring consectetuer dolor sending to kafka topic {}
+2022-07-21 13:58:04 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text ultricies ipsum elit Maecenas purus lectus Spring consectetuer sed porttitor purus sending to kafka topic {}
+2022-07-21 13:58:14 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text purus consectetuer ipsum lectus Spring ipsum sit sending to kafka topic {}
+2022-07-21 13:58:24 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text pulvinar adipiscing lectus ipsum Kafka purus massa sending to kafka topic {}
+2022-07-21 13:58:34 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text Maecenas Maecenas magna amet purus ultricies lectus Java Lorem Fusce sit dolor posuere pulvinar sending to kafka topic {}
+2022-07-21 13:58:44 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text magna posuere Lorem Spring Lorem elit sending to kafka topic {}
+2022-07-21 13:58:54 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text Maecenas Lorem porttitor Lorem sed Java Fusce congue libero posuere sending to kafka topic {}
+2022-07-21 13:59:04 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text magna adipiscing posuere sed congue Lorem sed Spring consectetuer porttitor pulvinar porttitor Maecenas sed sending to kafka topic {}
+2022-07-21 13:59:14 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text dolor sit ipsum Maecenas Java pulvinar lectus adipiscing sending to kafka topic {}
+2022-07-21 13:59:24 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text magna dolor libero ipsum libero consectetuer Fusce congue Java porttitor lectus ipsum ultricies purus congue congue sending to kafka topic {}
+2022-07-21 13:59:34 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text Fusce lectus ipsum posuere libero magna sed Spring purus porttitor porttitor posuere dolor sending to kafka topic {}
+2022-07-21 13:59:44 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text libero dolor malesuada libero posuere Java pulvinar adipiscing pulvinar malesuada sending to kafka topic {}
+2022-07-21 13:59:54 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text malesuada consectetuer ultricies sit lectus Fusce adipiscing congue Kafka porttitor malesuada ipsum lectus sit congue sending to kafka topic {}
+2022-07-21 14:00:04 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text Lorem dolor massa porttitor porttitor lectus massa Kafka lectus libero Fusce sed purus sending to kafka topic {}
+2022-07-21 14:00:14 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text Maecenas Lorem dolor sit Maecenas Lorem purus elit Spring malesuada adipiscing Fusce malesuada purus purus sending to kafka topic {}
+2022-07-21 14:00:24 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text Maecenas malesuada massa consectetuer Kafka Maecenas libero sending to kafka topic {}
+2022-07-21 14:00:34 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text amet magna sed elit Kafka Fusce consectetuer sending to kafka topic {}
+2022-07-21 14:00:44 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text libero ipsum Lorem Lorem dolor malesuada Kafka sit magna amet sit sit sending to kafka topic {}
+2022-07-21 14:00:54 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text congue purus purus Java pulvinar ipsum sending to kafka topic {}
+2022-07-21 14:01:04 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text congue ultricies Maecenas Lorem massa Fusce posuere Java libero posuere consectetuer amet elit sending to kafka topic {}
+2022-07-21 14:01:14 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text magna sed Lorem Java adipiscing Fusce sending to kafka topic {}
+2022-07-21 14:01:24 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text congue libero adipiscing consectetuer Maecenas pulvinar ipsum Spring Fusce porttitor Maecenas elit dolor massa sending to kafka topic {}
+2022-07-21 14:01:34 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text dolor massa elit Maecenas pulvinar elit elit ultricies Java libero porttitor massa consectetuer adipiscing consectetuer Maecenas sending to kafka topic {}
+2022-07-21 14:01:44 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text libero magna elit ultricies Spring libero ipsum sending to kafka topic {}
+2022-07-21 14:01:54 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text libero massa sed pulvinar porttitor congue ipsum dolor Java Lorem ultricies ultricies congue porttitor adipiscing sending to kafka topic {}
+2022-07-21 14:02:04 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text elit adipiscing libero magna porttitor congue Spring elit sed massa Maecenas sending to kafka topic {}
+2022-07-21 14:02:14 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text Fusce purus sed pulvinar Kafka magna libero sending to kafka topic {}
+2022-07-21 14:02:24 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text congue Lorem magna massa Maecenas Spring Maecenas posuere amet Maecenas sending to kafka topic {}
+2022-07-21 14:02:34 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text ultricies amet libero Fusce posuere Java purus amet pulvinar dolor sending to kafka topic {}
+2022-07-21 14:02:44 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text amet pulvinar sit Fusce ultricies Spring pulvinar ipsum pulvinar sending to kafka topic {}
+2022-07-21 14:02:54 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text porttitor consectetuer porttitor magna pulvinar congue sit Spring ipsum adipiscing consectetuer porttitor Lorem pulvinar sending to kafka topic {}
+2022-07-21 14:03:04 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text Fusce elit Fusce posuere porttitor massa adipiscing Java malesuada adipiscing Fusce ipsum dolor sending to kafka topic {}
+2022-07-21 14:03:14 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text Maecenas congue Maecenas dolor lectus dolor lectus dolor Java adipiscing Lorem Fusce magna consectetuer purus sending to kafka topic {}
+2022-07-21 14:03:24 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text ipsum amet pulvinar consectetuer sed Java amet malesuada lectus sending to kafka topic {}
+2022-07-21 14:03:34 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text elit magna libero elit purus amet Spring Maecenas magna ipsum posuere porttitor sending to kafka topic {}
+2022-07-21 14:03:44 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text malesuada massa congue Lorem Maecenas sit dolor Java Fusce magna massa congue posuere sending to kafka topic {}
+2022-07-21 14:03:54 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text sit massa lectus pulvinar adipiscing libero elit malesuada Kafka purus posuere Fusce purus elit sit sending to kafka topic {}
+2022-07-21 14:04:04 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text congue Maecenas dolor ipsum Java elit purus Fusce sending to kafka topic {}
+2022-07-21 14:04:14 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text elit adipiscing ultricies Fusce Maecenas Kafka sed Fusce posuere sending to kafka topic {}
+2022-07-21 14:04:24 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text elit congue adipiscing lectus Kafka Fusce ipsum sending to kafka topic {}
+2022-07-21 14:04:34 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text ultricies elit lectus adipiscing Java posuere Maecenas sending to kafka topic {}
+2022-07-21 14:04:44 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text dolor Lorem ultricies magna dolor Spring posuere magna malesuada magna sending to kafka topic {}
+2022-07-21 14:04:54 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text Maecenas lectus Lorem posuere Maecenas Maecenas Spring porttitor pulvinar libero malesuada Lorem sending to kafka topic {}
+2022-07-21 14:05:04 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text Maecenas Fusce ultricies Fusce congue posuere Kafka consectetuer malesuada purus posuere sending to kafka topic {}
+2022-07-21 14:05:14 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text pulvinar magna congue posuere ultricies elit lectus Spring dolor pulvinar pulvinar dolor elit sending to kafka topic {}
+2022-07-21 14:05:24 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text posuere sit Lorem massa malesuada congue sed adipiscing Java adipiscing ultricies magna amet Maecenas sit massa sending to kafka topic {}
+2022-07-21 14:05:34 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text malesuada massa Fusce sit consectetuer malesuada Spring massa dolor lectus congue sending to kafka topic {}
+2022-07-21 14:05:45 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text porttitor Maecenas consectetuer Fusce ipsum sed consectetuer Spring consectetuer sit amet dolor sed sending to kafka topic {}
+2022-07-21 14:05:55 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text adipiscing massa sed sed massa porttitor sed Java pulvinar Maecenas amet amet adipiscing Lorem sending to kafka topic {}
+2022-07-21 14:06:13 [main] INFO  net.serg.TwitterToKafkaApplication - Starting TwitterToKafkaApplication using Java 11.0.2 on WIN-226UIE1LGCG with PID 2472 (C:\Users\User\Desktop\epam_interanl_lab\microservices\twitter-to-kafka\target\classes started by User in C:\Users\User\Desktop\epam_interanl_lab\microservices)
+2022-07-21 14:06:13 [main] INFO  net.serg.TwitterToKafkaApplication - No active profile set, falling back to 1 default profile: "default"
+2022-07-21 14:06:14 [main] INFO  net.serg.TwitterToKafkaApplication - Started TwitterToKafkaApplication in 2.304 seconds (JVM running for 5.148)
+2022-07-21 14:06:14 [main] INFO  net.serg.TwitterToKafkaApplication - App starts
+2022-07-21 14:06:14 [main] INFO  net.serg.TwitterToKafkaApplication - [Java, Kafka, Spring]
+2022-07-21 14:06:14 [main] INFO  net.serg.TwitterToKafkaApplication - Hello microservices!
+2022-07-21 14:06:14 [main] INFO  n.s.r.impl.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Kafka, Spring]
+2022-07-21 14:06:14 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text consectetuer magna ipsum magna Java elit Maecenas sending to kafka topic {}
+2022-07-21 14:06:24 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text massa amet pulvinar congue Spring Lorem porttitor sending to kafka topic {}
+2022-07-21 14:06:34 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text magna adipiscing posuere lectus dolor amet Kafka purus lectus dolor lectus sending to kafka topic {}
+2022-07-21 14:06:44 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text sed libero sit dolor consectetuer purus libero Kafka posuere purus lectus ipsum congue sending to kafka topic {}
+2022-07-21 14:06:54 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text Maecenas magna sit massa ultricies Lorem massa purus Kafka posuere ipsum pulvinar lectus Fusce amet sending to kafka topic {}
+2022-07-21 14:07:04 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text dolor posuere purus lectus adipiscing amet pulvinar Maecenas Spring elit Fusce sit dolor ipsum adipiscing purus sending to kafka topic {}
+2022-07-21 14:07:14 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text sit libero Maecenas posuere elit Java Maecenas dolor sed porttitor sending to kafka topic {}
+2022-07-21 14:07:24 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text consectetuer Fusce Lorem pulvinar posuere pulvinar Kafka massa sit posuere Lorem sending to kafka topic {}
+2022-07-21 14:07:34 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text Fusce Maecenas dolor malesuada magna congue amet Spring libero Maecenas consectetuer ultricies Fusce magna sending to kafka topic {}
+2022-07-21 14:07:44 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text congue adipiscing massa libero Kafka posuere magna sending to kafka topic {}
+2022-07-21 14:07:54 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text posuere ipsum amet dolor Maecenas sit Java lectus elit Lorem Lorem sending to kafka topic {}
+2022-07-21 14:08:04 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text consectetuer massa ipsum Java lectus libero sending to kafka topic {}
+2022-07-21 14:08:14 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text magna adipiscing malesuada magna adipiscing Lorem elit dolor Spring porttitor amet elit malesuada Maecenas purus Fusce sending to kafka topic {}
+2022-07-21 14:08:24 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text consectetuer libero Fusce ultricies Lorem consectetuer Kafka lectus congue Lorem ipsum malesuada sending to kafka topic {}
+2022-07-21 14:08:34 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text Lorem ultricies porttitor dolor dolor porttitor Lorem Spring sit adipiscing Maecenas dolor libero massa sending to kafka topic {}
+2022-07-21 14:08:44 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text malesuada congue Maecenas elit lectus congue malesuada massa Kafka dolor magna amet posuere purus posuere Lorem sending to kafka topic {}
+2022-07-21 14:08:54 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text pulvinar ipsum elit amet porttitor porttitor Lorem pulvinar Java amet dolor lectus Lorem sed porttitor Fusce sending to kafka topic {}
+2022-07-21 14:09:04 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text Fusce Lorem purus Spring elit ipsum sending to kafka topic {}
+2022-07-21 14:09:14 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text lectus ultricies amet purus Spring amet adipiscing sending to kafka topic {}
+2022-07-21 14:09:24 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text Lorem massa sit malesuada lectus Spring Maecenas porttitor massa posuere sending to kafka topic {}
+2022-07-21 14:09:34 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text lectus ipsum amet sit Spring amet pulvinar sending to kafka topic {}
+2022-07-21 14:09:44 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text purus consectetuer purus sit elit Fusce Kafka massa Lorem pulvinar massa adipiscing sending to kafka topic {}
+2022-07-21 14:09:54 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text elit sed sed ipsum sit porttitor Maecenas libero Kafka ipsum Fusce purus massa porttitor porttitor congue sending to kafka topic {}
+2022-07-21 14:10:04 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text malesuada dolor congue Kafka consectetuer magna sending to kafka topic {}
+2022-07-21 14:10:14 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text purus sed pulvinar Maecenas libero posuere massa Kafka Fusce ultricies Lorem Lorem pulvinar sending to kafka topic {}
+2022-07-21 14:10:24 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text consectetuer magna dolor libero pulvinar Spring purus libero sed sending to kafka topic {}
+2022-07-21 14:10:34 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text adipiscing amet ipsum posuere Lorem porttitor Kafka ipsum lectus malesuada Maecenas sending to kafka topic {}
+2022-07-21 14:10:44 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text purus purus libero libero Lorem Java sit massa ultricies sending to kafka topic {}
+2022-07-21 14:10:54 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text porttitor amet congue amet Java ultricies Maecenas sending to kafka topic {}
+2022-07-21 14:11:04 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text sed sit porttitor magna Maecenas congue Spring pulvinar Lorem amet ultricies sending to kafka topic {}
+2022-07-21 14:11:14 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text congue dolor lectus elit adipiscing consectetuer Spring dolor consectetuer malesuada magna ultricies sending to kafka topic {}
+2022-07-21 14:11:24 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text Lorem elit pulvinar Maecenas pulvinar sed dolor Kafka congue posuere dolor sit sed sending to kafka topic {}
+2022-07-21 14:11:34 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text libero purus congue magna amet sit Java ultricies amet malesuada Lorem sending to kafka topic {}
+2022-07-21 14:11:44 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text consectetuer elit Fusce sed elit Maecenas sed Java ultricies libero amet elit massa sending to kafka topic {}
+2022-07-21 14:11:54 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text ultricies malesuada dolor consectetuer Lorem consectetuer adipiscing posuere Spring Lorem porttitor sit Fusce porttitor congue sending to kafka topic {}
+2022-07-21 14:12:04 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text congue malesuada pulvinar ipsum pulvinar Lorem porttitor Java ipsum porttitor ipsum Fusce Fusce sending to kafka topic {}
+2022-07-21 14:12:14 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text massa sit libero sit consectetuer sed magna ipsum Kafka posuere ultricies magna amet sed amet sending to kafka topic {}
+2022-07-21 14:12:24 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text ipsum magna ipsum pulvinar dolor pulvinar magna Lorem Spring posuere consectetuer congue congue massa libero sending to kafka topic {}
+2022-07-21 14:12:34 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text consectetuer adipiscing Maecenas Fusce massa Spring dolor Fusce adipiscing lectus sending to kafka topic {}
+2022-07-21 14:12:44 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text libero porttitor sed Kafka Maecenas magna sending to kafka topic {}
+2022-07-21 14:12:54 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text sit ultricies pulvinar massa consectetuer porttitor dolor Java elit magna ipsum amet posuere sed sending to kafka topic {}
+2022-07-21 14:13:04 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text magna pulvinar purus consectetuer malesuada congue pulvinar ultricies Java porttitor porttitor pulvinar sed ultricies libero sending to kafka topic {}
+2022-07-21 14:13:14 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text amet Maecenas elit Kafka sit congue sending to kafka topic {}
+2022-07-21 14:13:24 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text magna lectus posuere ipsum porttitor malesuada massa sit Spring ipsum Lorem sed sit Fusce Fusce sending to kafka topic {}
+2022-07-21 14:13:34 [main] INFO  n.s.l.TwitterKafkaStatusListener - Received status text ipsum porttitor sit pulvinar elit Java lectus adipiscing Fusce porttitor sending to kafka topic {}

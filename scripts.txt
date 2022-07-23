@@ -1,0 +1,5 @@
+docker-compose -f common.yml -f kafka_cluster.yml up -d
+
+docker run --tty --network  docker-compose_application  confluentinc/cp-kafkacat kafkacat -b  PLAINTEXT://kafka-broker-1:9092 -L
+
+kafka-console-consumer --bootstrap-server localhost:9092 --topic twitter-topic --from-beginning

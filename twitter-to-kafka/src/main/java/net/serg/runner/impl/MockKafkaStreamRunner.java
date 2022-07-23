@@ -1,6 +1,6 @@
 package net.serg.runner.impl;
 
-import net.serg.config.KafkaConfigData;
+import net.serg.config.TwitterToKafkaConfigData;
 import net.serg.exception.TwitterToKafkaException;
 import net.serg.listener.TwitterKafkaStatusListener;
 import net.serg.runner.StreamRunner;
@@ -26,7 +26,7 @@ public class MockKafkaStreamRunner implements StreamRunner {
 
     private static final Logger LOG = LoggerFactory.getLogger(MockKafkaStreamRunner.class);
 
-    private final KafkaConfigData kafkaConfigData;
+    private final TwitterToKafkaConfigData twitterToKafkaConfigData;
 
     private final TwitterKafkaStatusListener twitterKafkaStatusListener;
 
@@ -66,18 +66,18 @@ public class MockKafkaStreamRunner implements StreamRunner {
 
     private static final String TWITTER_STATUS_DATE_FORMAT = "EEE MMM dd HH:mm:ss zzz yyyy";
 
-    public MockKafkaStreamRunner(KafkaConfigData configData,
+    public MockKafkaStreamRunner(TwitterToKafkaConfigData configData,
                                  TwitterKafkaStatusListener statusListener) {
-        this.kafkaConfigData = configData;
+        this.twitterToKafkaConfigData = configData;
         this.twitterKafkaStatusListener = statusListener;
     }
 
     @Override
     public void start() throws TwitterException {
-        String[] keywords = kafkaConfigData.getTwitterKeywords().toArray(new String[0]);
-        int minTweetLength = kafkaConfigData.getMockMinTweetLength();
-        int maxTweetLength = kafkaConfigData.getMockMaxTweetLength();
-        long sleepTimeMs = kafkaConfigData.getMockSleepMs();
+        String[] keywords = twitterToKafkaConfigData.getTwitterKeywords().toArray(new String[0]);
+        int minTweetLength = twitterToKafkaConfigData.getMockMinTweetLength();
+        int maxTweetLength = twitterToKafkaConfigData.getMockMaxTweetLength();
+        long sleepTimeMs = twitterToKafkaConfigData.getMockSleepMs();
         LOG.info("Starting mock filtering twitter streams for keywords {}", Arrays.toString(keywords));
         while (true) {
             String formattedTweetAsRawJson = getFormattedTweet(keywords, minTweetLength, maxTweetLength);

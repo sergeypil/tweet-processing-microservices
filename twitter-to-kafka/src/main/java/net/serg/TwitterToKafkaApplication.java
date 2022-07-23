@@ -1,8 +1,11 @@
 package net.serg;
 
 import lombok.extern.slf4j.Slf4j;
-import net.serg.config.KafkaConfigData;
+import net.serg.config.TwitterToKafkaConfigData;
+import net.serg.init.StreamInitializer;
 import net.serg.runner.StreamRunner;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -13,12 +16,13 @@ import java.util.Arrays;
 @Slf4j
 public class TwitterToKafkaApplication implements CommandLineRunner {
 
-    private final KafkaConfigData kafkaConfigData;
     private final StreamRunner streamRunner;
 
-    public TwitterToKafkaApplication(KafkaConfigData kafkaConfigData, StreamRunner streamRunner) {
-        this.kafkaConfigData = kafkaConfigData;
-        this.streamRunner = streamRunner;
+    private final StreamInitializer streamInitializer;
+
+    public TwitterToKafkaApplication(StreamRunner runner, StreamInitializer initializer) {
+        this.streamRunner = runner;
+        this.streamInitializer = initializer;
     }
 
     public static void main(String[] args) {
@@ -27,9 +31,8 @@ public class TwitterToKafkaApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        log.info("App starts");
-        log.info(Arrays.toString(kafkaConfigData.getTwitterKeywords().toArray(new String[] {})));
-        log.info(kafkaConfigData.getWelcomeMessage());
+        log.info("App starts...");
+        streamInitializer.init();
         streamRunner.start();
     }
 }
