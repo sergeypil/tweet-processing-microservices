@@ -19,7 +19,8 @@ services:
       - data01:/usr/share/elasticsearch/data
     ports:
       - 9200:9200
-
+    networks:
+      - ${GLOBAL_NETWORK:-elastic}
   # elastic-2:
     # image: docker.elastic.co/elasticsearch/elasticsearch:${ELASTIC_VERSION}
     # environment:

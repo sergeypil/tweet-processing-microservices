@@ -63,6 +63,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
                     <image>
+                        <builder>paketobuildpacks/builder:base</builder>
                         <name>${project.groupId}/twitter.to.kafka.service:${project.version}</name>
                     </image>
                 </configuration>
