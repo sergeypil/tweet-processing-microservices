@@ -69,9 +69,10 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>2.7.1</version>
                 <configuration>
                     <image>
-                        <builder>gcr.io/paketo-buildpacks/builder:base</builder>
+                        <pullPolicy>IF_NOT_PRESENT</pullPolicy>
                         <name>${project.groupId}/elasticsearch.query.service:${project.version}</name>
                     </image>
                 </configuration>

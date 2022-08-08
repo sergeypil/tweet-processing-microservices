@@ -16,7 +16,8 @@
 		<module>elasticsearch</module>
         <module>common-util</module>
 		<module>elasticsearch-query-service</module>
-	</modules>
+        <module>elasticsearch-query-web-client</module>
+    </modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
@@ -234,7 +235,7 @@
 				<plugin>
 					<groupId>org.springframework.boot</groupId>
 					<artifactId>spring-boot-maven-plugin</artifactId>
-					<version>${spring-boot.version}</version>
+					<version>2.7.1</version>
 				</plugin>
 			</plugins>
 		</pluginManagement>

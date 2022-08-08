@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: elasticsearch-query-web-client
+  profiles:
+    active: elasticsearch_query_web
+  cloud:
+    config:
+      name: elasticsearch-query-web-client,config-client
+      uri: http://localhost:8888
+      username: spring_cloud_user
+      password: pass

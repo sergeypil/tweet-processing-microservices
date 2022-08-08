@@ -12,6 +12,7 @@ import net.serg.elasticsearch.query.service.model.ElasticsearchQueryServiceRespo
 import net.serg.elasticsearch.query.service.model.ElasticsearchQueryServiceResponseModelV2;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -25,6 +26,9 @@ import java.util.List;
 public class ElasticsearchDocumentController {
 
     private final ElasticsearchQueryService elasticsearchQueryService;
+
+    @Value("${server.port}")
+    private String port;
 
     public ElasticsearchDocumentController(ElasticsearchQueryService queryService) {
         this.elasticsearchQueryService = queryService;
@@ -104,7 +108,7 @@ public class ElasticsearchDocumentController {
     getDocumentByText(@RequestBody @Valid ElasticsearchQueryServiceRequestModel elasticQueryServiceRequestModel) {
         List<ElasticsearchQueryServiceResponseModel> response =
                 elasticsearchQueryService.getDocumentByText(elasticQueryServiceRequestModel.getText());
-        log.info("Elasticsearch returned {} of documents", response.size());
+        log.info("Elasticsearch returned {} of documents on port {}", response.size(), port);
         return ResponseEntity.ok(response);
     }
 

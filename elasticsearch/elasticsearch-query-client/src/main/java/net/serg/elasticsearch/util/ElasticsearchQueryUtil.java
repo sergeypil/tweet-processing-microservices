@@ -1,5 +1,6 @@
 package net.serg.elasticsearch.util;
 
+import lombok.extern.slf4j.Slf4j;
 import net.serg.elasticsearch.model.IndexModel;
 import org.elasticsearch.index.query.BoolQueryBuilder;
 import org.elasticsearch.index.query.QueryBuilders;
@@ -10,6 +11,7 @@ import org.springframework.stereotype.Component;
 import java.util.Collections;
 
 @Component
+@Slf4j
 public class ElasticsearchQueryUtil<T extends IndexModel> {
 
     public Query getSearchQueryById(String id) {
@@ -19,6 +21,7 @@ public class ElasticsearchQueryUtil<T extends IndexModel> {
     }
 
     public Query getSearchQueryByFieldText(String field, String text) {
+        log.info("Field from config: {}", field);
         return new NativeSearchQueryBuilder()
                 .withQuery(new BoolQueryBuilder()
                         .must(QueryBuilders.matchQuery(field, text)))

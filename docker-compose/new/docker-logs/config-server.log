@@ -1,0 +1,549 @@
+2022-08-02 05:53:05 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2022-08-02 07:01:29 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2022-08-02 07:01:38 [main] INFO  net.serg.ConfigServer - No active profile set, falling back to default profiles: default
+2022-08-02 07:01:49 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=3cd2c8eb-de43-3f2d-bdf3-f122f1f95d01
+2022-08-02 07:01:52 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2022-08-02 07:01:52 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2022-08-02 07:01:52 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-08-02 07:01:52 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2022-08-02 07:01:53 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-08-02 07:01:53 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 14872 ms
+2022-08-02 07:01:57 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-08-02 07:02:05 [main] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-02 07:02:10 [main] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/git-upload-pack
+2022-08-02 07:02:29 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/actuator/**'], []
+2022-08-02 07:02:29 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/encrypt/**'], []
+2022-08-02 07:02:29 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/decrypt/**'], []
+2022-08-02 07:02:30 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6b289535, org.springframework.security.web.context.SecurityContextPersistenceFilter@3aca2579, org.springframework.security.web.header.HeaderWriterFilter@2e8986b6, org.springframework.security.web.csrf.CsrfFilter@513fab1e, org.springframework.security.web.authentication.logout.LogoutFilter@65b2ee36, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4b00d59, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@7ef4aceb, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@74619273, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2e0163cb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@651cedfb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@67a38, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@38c55a8a, org.springframework.security.web.session.SessionManagementFilter@3ad2883a, org.springframework.security.web.access.ExceptionTranslationFilter@21698e5a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@a7ae340]
+2022-08-02 07:02:31 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-08-02 07:02:31 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2022-08-02 07:02:31 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2022-08-02 07:02:32 [main] INFO  net.serg.ConfigServer - Started ConfigServer in 70.524 seconds (JVM running for 80.93)
+2022-08-02 07:02:32 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-02 07:02:33 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-08-02 07:02:33 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 86 ms
+2022-08-02 07:02:33 [http-nio-8888-exec-2] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-02 07:02:35 [http-nio-8888-exec-1] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-02 07:03:20 [http-nio-8888-exec-3] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-02 07:03:25 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-8129083135575150483/config-client-twitter_to_kafka.yml
+2022-08-02 07:03:25 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-8129083135575150483/config-client.yml
+2022-08-02 07:03:25 [http-nio-8888-exec-5] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-02 07:03:29 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-8129083135575150483/config-client-elasticsearch_query.yml
+2022-08-02 07:03:29 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-8129083135575150483/config-client.yml
+2022-08-02 09:23:15 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2022-08-02 09:23:26 [main] INFO  net.serg.ConfigServer - No active profile set, falling back to default profiles: default
+2022-08-02 09:23:41 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=3cd2c8eb-de43-3f2d-bdf3-f122f1f95d01
+2022-08-02 09:23:45 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2022-08-02 09:23:45 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2022-08-02 09:23:45 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-08-02 09:23:45 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2022-08-02 09:23:47 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-08-02 09:23:47 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 19853 ms
+2022-08-02 09:23:58 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-08-02 09:24:14 [main] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-02 09:24:22 [main] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/git-upload-pack
+2022-08-02 09:24:34 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/actuator/**'], []
+2022-08-02 09:24:34 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/encrypt/**'], []
+2022-08-02 09:24:34 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/decrypt/**'], []
+2022-08-02 09:24:34 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@8ce3f27, org.springframework.security.web.context.SecurityContextPersistenceFilter@67a38, org.springframework.security.web.header.HeaderWriterFilter@33356666, org.springframework.security.web.csrf.CsrfFilter@308c65e0, org.springframework.security.web.authentication.logout.LogoutFilter@7805478c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2e0163cb, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@31433df9, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@614cd187, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@115ef673, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@31b650e9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1bea7b0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6802d023, org.springframework.security.web.session.SessionManagementFilter@878feb2, org.springframework.security.web.access.ExceptionTranslationFilter@73d83141, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@11170228]
+2022-08-02 09:24:36 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-08-02 09:24:37 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2022-08-02 09:24:41 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2022-08-02 09:24:42 [main] INFO  net.serg.ConfigServer - Started ConfigServer in 94.174 seconds (JVM running for 98.807)
+2022-08-02 09:24:43 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-02 09:24:43 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-08-02 09:24:43 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 164 ms
+2022-08-02 09:24:45 [http-nio-8888-exec-1] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-02 09:26:11 [http-nio-8888-exec-2] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-02 09:26:31 [http-nio-8888-exec-2] WARN  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - Could not fetch remote for main remote: https://github.com/add-additional/config-server/
+2022-08-02 09:26:31 [http-nio-8888-exec-2] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-4540754038944549956/config-client-twitter_to_kafka.yml
+2022-08-02 09:26:31 [http-nio-8888-exec-2] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-4540754038944549956/config-client.yml
+2022-08-02 09:29:05 [http-nio-8888-exec-4] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-02 09:29:43 [http-nio-8888-exec-5] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-02 09:29:44 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-4540754038944549956/config-client-elasticsearch_query.yml
+2022-08-02 09:29:44 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-4540754038944549956/config-client.yml
+2022-08-03 20:41:59 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2022-08-03 20:42:01 [main] INFO  net.serg.ConfigServer - No active profile set, falling back to default profiles: default
+2022-08-03 20:42:04 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=3cd2c8eb-de43-3f2d-bdf3-f122f1f95d01
+2022-08-03 20:42:04 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2022-08-03 20:42:05 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2022-08-03 20:42:05 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-08-03 20:42:05 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2022-08-03 20:42:05 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-08-03 20:42:05 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4597 ms
+2022-08-03 20:42:07 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-08-03 20:42:10 [main] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-03 20:42:11 [main] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/git-upload-pack
+2022-08-03 20:42:13 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/actuator/**'], []
+2022-08-03 20:42:13 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/encrypt/**'], []
+2022-08-03 20:42:13 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/decrypt/**'], []
+2022-08-03 20:42:13 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4a5b38e6, org.springframework.security.web.context.SecurityContextPersistenceFilter@31443680, org.springframework.security.web.header.HeaderWriterFilter@4ba13fed, org.springframework.security.web.csrf.CsrfFilter@4ff9f715, org.springframework.security.web.authentication.logout.LogoutFilter@3a1a0bc, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@11170228, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@321c2a7, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@58583a2d, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@32d1d6c5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3a988299, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@93fb44, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3e8afc2d, org.springframework.security.web.session.SessionManagementFilter@18d22ecf, org.springframework.security.web.access.ExceptionTranslationFilter@5814b4fb, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4b00d59]
+2022-08-03 20:42:13 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-08-03 20:42:13 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2022-08-03 20:42:13 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2022-08-03 20:42:13 [main] INFO  net.serg.ConfigServer - Started ConfigServer in 15.046 seconds (JVM running for 16.528)
+2022-08-03 20:42:13 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-03 20:42:13 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-08-03 20:42:13 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 17 ms
+2022-08-03 20:42:14 [http-nio-8888-exec-1] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-03 20:42:15 [http-nio-8888-exec-2] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-03 20:42:30 [http-nio-8888-exec-3] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-03 20:42:31 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-4525757842650215432/config-client-elasticsearch_query.yml
+2022-08-03 20:42:31 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-4525757842650215432/config-client.yml
+2022-08-03 20:42:31 [http-nio-8888-exec-4] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-03 20:42:32 [http-nio-8888-exec-4] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-4525757842650215432/config-client-elasticsearch_query.yml
+2022-08-03 20:42:32 [http-nio-8888-exec-4] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-4525757842650215432/config-client.yml
+2022-08-06 19:16:44 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2022-08-06 19:16:47 [main] INFO  net.serg.ConfigServer - No active profile set, falling back to default profiles: default
+2022-08-06 19:16:52 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=3cd2c8eb-de43-3f2d-bdf3-f122f1f95d01
+2022-08-06 19:16:54 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2022-08-06 19:16:54 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2022-08-06 19:16:54 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-08-06 19:16:54 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2022-08-06 19:16:54 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-08-06 19:16:54 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 7499 ms
+2022-08-06 19:16:56 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-08-06 19:17:01 [main] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-06 19:17:03 [main] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/git-upload-pack
+2022-08-06 19:17:06 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/actuator/**'], []
+2022-08-06 19:17:06 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/encrypt/**'], []
+2022-08-06 19:17:06 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/decrypt/**'], []
+2022-08-06 19:17:06 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@11170228, org.springframework.security.web.context.SecurityContextPersistenceFilter@21698e5a, org.springframework.security.web.header.HeaderWriterFilter@58b5f7d2, org.springframework.security.web.csrf.CsrfFilter@1a3c4b3e, org.springframework.security.web.authentication.logout.LogoutFilter@1ab9c735, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@35cbeb54, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@31443680, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@46ee7013, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@49925d21, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2e8986b6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@73d83141, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@69d58731, org.springframework.security.web.session.SessionManagementFilter@9f48198, org.springframework.security.web.access.ExceptionTranslationFilter@50fa5938, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@26c6288d]
+2022-08-06 19:17:06 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-08-06 19:17:07 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2022-08-06 19:17:07 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2022-08-06 19:17:07 [main] INFO  net.serg.ConfigServer - Started ConfigServer in 25.928 seconds (JVM running for 29.361)
+2022-08-06 19:17:09 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-06 19:17:09 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-08-06 19:17:09 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 25 ms
+2022-08-06 19:17:09 [http-nio-8888-exec-1] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-06 19:17:14 [http-nio-8888-exec-2] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-06 19:17:24 [http-nio-8888-exec-3] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-06 19:17:25 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-7573173760023962870/config-client-elasticsearch_query.yml
+2022-08-06 19:17:25 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-7573173760023962870/config-client.yml
+2022-08-06 19:17:27 [http-nio-8888-exec-5] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-06 19:17:28 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-7573173760023962870/config-client-elasticsearch_query.yml
+2022-08-06 19:17:28 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-7573173760023962870/config-client.yml
+2022-08-06 19:36:06 [http-nio-8888-exec-7] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-06 19:36:08 [http-nio-8888-exec-7] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-7573173760023962870/config-client-elasticsearch_query_web.yml
+2022-08-06 19:36:08 [http-nio-8888-exec-7] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-7573173760023962870/config-client.yml
+2022-08-06 19:41:48 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-08-06 19:42:18 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2022-08-06 19:42:23 [main] INFO  net.serg.ConfigServer - No active profile set, falling back to default profiles: default
+2022-08-06 19:42:28 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=3cd2c8eb-de43-3f2d-bdf3-f122f1f95d01
+2022-08-06 19:42:30 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2022-08-06 19:42:30 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2022-08-06 19:42:30 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-08-06 19:42:30 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2022-08-06 19:42:30 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-08-06 19:42:30 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 6937 ms
+2022-08-06 19:42:32 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-08-06 19:42:35 [main] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-06 19:42:40 [main] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/git-upload-pack
+2022-08-06 19:42:43 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/actuator/**'], []
+2022-08-06 19:42:43 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/encrypt/**'], []
+2022-08-06 19:42:43 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/decrypt/**'], []
+2022-08-06 19:42:43 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1d7f7962, org.springframework.security.web.context.SecurityContextPersistenceFilter@18d22ecf, org.springframework.security.web.header.HeaderWriterFilter@5814b4fb, org.springframework.security.web.csrf.CsrfFilter@7323dce7, org.springframework.security.web.authentication.logout.LogoutFilter@11e24688, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4d4c4b14, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@5b5b8730, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@32d1d6c5, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@38c55a8a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@31443680, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@683fe7b5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4a5b38e6, org.springframework.security.web.session.SessionManagementFilter@4ba13fed, org.springframework.security.web.access.ExceptionTranslationFilter@5724c7da, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@59a2bed1]
+2022-08-06 19:42:44 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-08-06 19:42:44 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2022-08-06 19:42:44 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2022-08-06 19:42:45 [main] INFO  net.serg.ConfigServer - Started ConfigServer in 27.86 seconds (JVM running for 30.275)
+2022-08-06 19:42:45 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-06 19:42:45 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-08-06 19:42:45 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 189 ms
+2022-08-06 19:42:46 [http-nio-8888-exec-1] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-06 19:42:47 [http-nio-8888-exec-2] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-06 19:43:07 [http-nio-8888-exec-4] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-06 19:43:08 [http-nio-8888-exec-4] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-17266694945772843573/config-client-elasticsearch_query.yml
+2022-08-06 19:43:08 [http-nio-8888-exec-4] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-17266694945772843573/config-client.yml
+2022-08-06 19:43:08 [http-nio-8888-exec-3] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-06 19:43:09 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-17266694945772843573/config-client-elasticsearch_query.yml
+2022-08-06 19:43:09 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-17266694945772843573/config-client.yml
+2022-08-06 19:45:20 [http-nio-8888-exec-7] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-06 19:45:22 [http-nio-8888-exec-7] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-17266694945772843573/config-client-elasticsearch_query_web.yml
+2022-08-06 19:45:22 [http-nio-8888-exec-7] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-17266694945772843573/config-client.yml
+2022-08-06 20:16:35 [http-nio-8888-exec-10] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-06 20:16:37 [http-nio-8888-exec-10] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-17266694945772843573/config-client-elasticsearch_query_web.yml
+2022-08-06 20:16:37 [http-nio-8888-exec-10] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-17266694945772843573/config-client.yml
+2022-08-06 20:47:20 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2022-08-06 20:47:23 [main] INFO  net.serg.ConfigServer - No active profile set, falling back to default profiles: default
+2022-08-06 20:47:28 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=3cd2c8eb-de43-3f2d-bdf3-f122f1f95d01
+2022-08-06 20:47:28 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2022-08-06 20:47:28 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2022-08-06 20:47:28 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-08-06 20:47:28 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2022-08-06 20:47:29 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-08-06 20:47:29 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5013 ms
+2022-08-06 20:47:30 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-08-06 20:47:33 [main] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-06 20:47:35 [main] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/git-upload-pack
+2022-08-06 20:47:37 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/actuator/**'], []
+2022-08-06 20:47:37 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/encrypt/**'], []
+2022-08-06 20:47:37 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/decrypt/**'], []
+2022-08-06 20:47:37 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@115ef673, org.springframework.security.web.context.SecurityContextPersistenceFilter@1818390b, org.springframework.security.web.header.HeaderWriterFilter@31443680, org.springframework.security.web.csrf.CsrfFilter@74f649a7, org.springframework.security.web.authentication.logout.LogoutFilter@454e9d65, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1b5af65b, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1bea7b0, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@8ce3f27, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2d172c7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7ef4aceb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@c87787d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@614cd187, org.springframework.security.web.session.SessionManagementFilter@3a988299, org.springframework.security.web.access.ExceptionTranslationFilter@18d22ecf, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@49925d21]
+2022-08-06 20:47:38 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-08-06 20:47:38 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2022-08-06 20:47:38 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2022-08-06 20:47:38 [main] INFO  net.serg.ConfigServer - Started ConfigServer in 20.707 seconds (JVM running for 22.526)
+2022-08-06 20:47:39 [http-nio-8888-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-06 20:47:39 [http-nio-8888-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-08-06 20:47:39 [http-nio-8888-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 37 ms
+2022-08-06 20:47:39 [http-nio-8888-exec-1] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-06 20:47:40 [http-nio-8888-exec-2] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-06 20:47:52 [http-nio-8888-exec-5] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-06 20:47:53 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-13704536604644771239/config-client-elasticsearch_query.yml
+2022-08-06 20:47:53 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-13704536604644771239/config-client.yml
+2022-08-06 20:47:53 [http-nio-8888-exec-3] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-06 20:47:54 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-13704536604644771239/config-client-elasticsearch_query.yml
+2022-08-06 20:47:54 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-13704536604644771239/config-client.yml
+2022-08-06 20:49:22 [http-nio-8888-exec-7] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-06 20:49:23 [http-nio-8888-exec-7] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-13704536604644771239/config-client-elasticsearch_query_web.yml
+2022-08-06 20:49:23 [http-nio-8888-exec-7] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-13704536604644771239/config-client.yml
+2022-08-07 08:06:40 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2022-08-07 08:06:47 [main] INFO  net.serg.ConfigServer - No active profile set, falling back to default profiles: default
+2022-08-07 08:06:54 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=3cd2c8eb-de43-3f2d-bdf3-f122f1f95d01
+2022-08-07 08:06:55 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2022-08-07 08:06:55 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2022-08-07 08:06:55 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-08-07 08:06:55 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2022-08-07 08:06:56 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-08-07 08:06:56 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 9171 ms
+2022-08-07 08:07:01 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-08-07 08:07:05 [main] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-07 08:07:08 [main] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/git-upload-pack
+2022-08-07 08:07:10 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/actuator/**'], []
+2022-08-07 08:07:10 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/encrypt/**'], []
+2022-08-07 08:07:10 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/decrypt/**'], []
+2022-08-07 08:07:10 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@70805849, org.springframework.security.web.context.SecurityContextPersistenceFilter@93fb44, org.springframework.security.web.header.HeaderWriterFilter@7ef4aceb, org.springframework.security.web.csrf.CsrfFilter@9f48198, org.springframework.security.web.authentication.logout.LogoutFilter@37e491e2, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@32d1d6c5, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3bcedb06, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@e7d0db2, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@77476fcf, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@14b48f39, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@464a3430, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4a41caed, org.springframework.security.web.session.SessionManagementFilter@683fe7b5, org.springframework.security.web.access.ExceptionTranslationFilter@1818390b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2e0163cb]
+2022-08-07 08:07:12 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-08-07 08:07:12 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2022-08-07 08:07:12 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2022-08-07 08:07:12 [main] INFO  net.serg.ConfigServer - Started ConfigServer in 34.131 seconds (JVM running for 38.046)
+2022-08-07 08:07:13 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-07 08:07:13 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-08-07 08:07:13 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 106 ms
+2022-08-07 08:07:15 [http-nio-8888-exec-1] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-07 08:07:40 [http-nio-8888-exec-2] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-07 08:07:41 [http-nio-8888-exec-2] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-3666910910730216955/config-client-elasticsearch_query.yml
+2022-08-07 08:07:41 [http-nio-8888-exec-2] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-3666910910730216955/config-client.yml
+2022-08-07 08:07:49 [http-nio-8888-exec-3] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-07 08:08:05 [http-nio-8888-exec-4] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-07 08:08:06 [http-nio-8888-exec-4] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-3666910910730216955/config-client-elasticsearch_query.yml
+2022-08-07 08:08:06 [http-nio-8888-exec-4] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-3666910910730216955/config-client.yml
+2022-08-07 08:10:19 [http-nio-8888-exec-7] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-07 08:10:21 [http-nio-8888-exec-7] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-3666910910730216955/config-client-elasticsearch_query_web.yml
+2022-08-07 08:10:21 [http-nio-8888-exec-7] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-3666910910730216955/config-client.yml
+2022-08-07 09:21:27 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2022-08-07 09:21:31 [main] INFO  net.serg.ConfigServer - No active profile set, falling back to default profiles: default
+2022-08-07 09:21:36 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=3cd2c8eb-de43-3f2d-bdf3-f122f1f95d01
+2022-08-07 09:21:37 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2022-08-07 09:21:37 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2022-08-07 09:21:37 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-08-07 09:21:37 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2022-08-07 09:21:37 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-08-07 09:21:37 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5653 ms
+2022-08-07 09:21:39 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-08-07 09:21:42 [main] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-07 09:21:44 [main] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/git-upload-pack
+2022-08-07 09:21:46 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/actuator/**'], []
+2022-08-07 09:21:46 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/encrypt/**'], []
+2022-08-07 09:21:46 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/decrypt/**'], []
+2022-08-07 09:21:46 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@e895e3e, org.springframework.security.web.context.SecurityContextPersistenceFilter@683fe7b5, org.springframework.security.web.header.HeaderWriterFilter@1818390b, org.springframework.security.web.csrf.CsrfFilter@58b5f7d2, org.springframework.security.web.authentication.logout.LogoutFilter@31183ee2, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@38c55a8a, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@6e4e60f5, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@77476fcf, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@6802d023, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@93fb44, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1ab9c735, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@70805849, org.springframework.security.web.session.SessionManagementFilter@7ef4aceb, org.springframework.security.web.access.ExceptionTranslationFilter@3a988299, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3275a47f]
+2022-08-07 09:21:47 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-08-07 09:21:47 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2022-08-07 09:21:47 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2022-08-07 09:21:47 [main] INFO  net.serg.ConfigServer - Started ConfigServer in 22.056 seconds (JVM running for 24.254)
+2022-08-07 09:21:49 [http-nio-8888-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-07 09:21:49 [http-nio-8888-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-08-07 09:21:49 [http-nio-8888-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 37 ms
+2022-08-07 09:21:49 [http-nio-8888-exec-1] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-07 09:21:50 [http-nio-8888-exec-2] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-07 09:22:02 [http-nio-8888-exec-3] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-07 09:22:03 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-13485908979760008654/config-client-elasticsearch_query.yml
+2022-08-07 09:22:03 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-13485908979760008654/config-client.yml
+2022-08-07 09:22:03 [http-nio-8888-exec-5] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-07 09:22:04 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-13485908979760008654/config-client-elasticsearch_query.yml
+2022-08-07 09:22:04 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-13485908979760008654/config-client.yml
+2022-08-07 09:25:44 [http-nio-8888-exec-7] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-07 09:25:46 [http-nio-8888-exec-7] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-13485908979760008654/config-client-elasticsearch_query_web.yml
+2022-08-07 09:25:46 [http-nio-8888-exec-7] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-13485908979760008654/config-client.yml
+2022-08-07 09:34:35 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-08-07 18:28:34 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2022-08-07 18:28:40 [main] INFO  net.serg.ConfigServer - No active profile set, falling back to default profiles: default
+2022-08-07 18:29:21 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=6a61b5a4-e4ee-3827-8063-10120a5746fc
+2022-08-07 18:29:56 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2022-08-07 18:29:58 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2022-08-07 18:29:58 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-08-07 18:30:03 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2022-08-07 18:30:47 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-08-07 18:30:51 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 130760 ms
+2022-08-07 18:33:01 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-08-07 18:33:12 [main] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-07 18:33:31 [main] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/git-upload-pack
+2022-08-07 18:33:34 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/actuator/**'], []
+2022-08-07 18:33:34 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/encrypt/**'], []
+2022-08-07 18:33:34 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/decrypt/**'], []
+2022-08-07 18:33:34 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2820b369, org.springframework.security.web.context.SecurityContextPersistenceFilter@24f90aff, org.springframework.security.web.header.HeaderWriterFilter@5bad555b, org.springframework.security.web.csrf.CsrfFilter@28e91f6d, org.springframework.security.web.authentication.logout.LogoutFilter@47d9c01, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5c5f12e, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@236a4d30, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@46b21632, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2842c098, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@25ea068e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2d3eecda, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@476c137b, org.springframework.security.web.session.SessionManagementFilter@70aa58e1, org.springframework.security.web.access.ExceptionTranslationFilter@5cdda548, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@34070bd2]
+2022-08-07 18:33:35 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-08-07 18:33:35 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2022-08-07 18:33:35 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2022-08-07 18:33:35 [main] INFO  net.serg.ConfigServer - Started ConfigServer in 302.936 seconds (JVM running for 305.179)
+2022-08-07 18:34:58 [http-nio-8888-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-07 18:34:59 [http-nio-8888-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-08-07 18:34:59 [http-nio-8888-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 24 ms
+2022-08-07 18:34:59 [http-nio-8888-exec-2] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-07 18:35:15 [http-nio-8888-exec-3] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-07 18:46:39 [http-nio-8888-exec-5] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-07 18:46:45 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-6900870157617663593/config-client-elasticsearch_query_web.yml
+2022-08-07 18:46:45 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-6900870157617663593/config-client.yml
+2022-08-07 19:02:08 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2022-08-07 19:02:11 [main] INFO  net.serg.ConfigServer - No active profile set, falling back to default profiles: default
+2022-08-07 19:02:16 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=6a61b5a4-e4ee-3827-8063-10120a5746fc
+2022-08-07 19:02:17 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2022-08-07 19:02:17 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2022-08-07 19:02:17 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-08-07 19:02:17 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2022-08-07 19:02:17 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-08-07 19:02:17 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 6101 ms
+2022-08-07 19:02:19 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-08-07 19:02:23 [main] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-07 19:02:27 [main] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/git-upload-pack
+2022-08-07 19:02:29 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/actuator/**'], []
+2022-08-07 19:02:29 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/encrypt/**'], []
+2022-08-07 19:02:29 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/decrypt/**'], []
+2022-08-07 19:02:29 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1e3566e, org.springframework.security.web.context.SecurityContextPersistenceFilter@56f84c9b, org.springframework.security.web.header.HeaderWriterFilter@c2e33, org.springframework.security.web.csrf.CsrfFilter@2d4a0671, org.springframework.security.web.authentication.logout.LogoutFilter@45d46254, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@20914835, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@4cd8db31, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@2b058bfd, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@68f69ca3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5cdda548, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@25ea068e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4805069b, org.springframework.security.web.session.SessionManagementFilter@63f3366a, org.springframework.security.web.access.ExceptionTranslationFilter@7805478c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@26a9c6df]
+2022-08-07 19:02:30 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-08-07 19:02:30 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2022-08-07 19:02:30 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2022-08-07 19:02:30 [main] INFO  net.serg.ConfigServer - Started ConfigServer in 23.825 seconds (JVM running for 25.818)
+2022-08-07 19:02:31 [http-nio-8888-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-07 19:02:31 [http-nio-8888-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-08-07 19:02:31 [http-nio-8888-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 17 ms
+2022-08-07 19:02:32 [http-nio-8888-exec-2] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-07 19:02:48 [http-nio-8888-exec-3] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-07 19:03:31 [http-nio-8888-exec-1] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-07 19:03:32 [http-nio-8888-exec-4] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-07 19:05:45 [http-nio-8888-exec-5] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-07 19:05:46 [http-nio-8888-exec-6] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-07 19:08:06 [http-nio-8888-exec-7] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-07 19:08:06 [http-nio-8888-exec-8] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-07 19:12:54 [http-nio-8888-exec-9] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-07 19:12:55 [http-nio-8888-exec-10] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-07 19:15:06 [http-nio-8888-exec-2] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-07 19:15:07 [http-nio-8888-exec-3] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-07 19:21:31 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-08-07 19:35:03 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2022-08-07 19:35:11 [main] INFO  net.serg.ConfigServer - No active profile set, falling back to default profiles: default
+2022-08-07 19:36:15 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=6a61b5a4-e4ee-3827-8063-10120a5746fc
+2022-08-07 19:36:15 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2022-08-07 19:36:15 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2022-08-07 19:36:15 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-08-07 19:36:15 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2022-08-07 19:36:16 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-08-07 19:36:16 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 64906 ms
+2022-08-07 19:36:29 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-08-07 19:36:53 [main] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-07 19:37:03 [main] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/git-upload-pack
+2022-08-07 19:37:06 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/actuator/**'], []
+2022-08-07 19:37:06 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/encrypt/**'], []
+2022-08-07 19:37:06 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/decrypt/**'], []
+2022-08-07 19:37:06 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@14ca88bc, org.springframework.security.web.context.SecurityContextPersistenceFilter@4f2544b0, org.springframework.security.web.header.HeaderWriterFilter@37e491e2, org.springframework.security.web.csrf.CsrfFilter@464a3430, org.springframework.security.web.authentication.logout.LogoutFilter@1a4cbcc6, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@34070bd2, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@7b64bbad, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@f01fc6d, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4805069b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@41ec4271, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@ecf028c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@85cd413, org.springframework.security.web.session.SessionManagementFilter@26679788, org.springframework.security.web.access.ExceptionTranslationFilter@31183ee2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@76eadc5a]
+2022-08-07 19:37:07 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-08-07 19:37:07 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2022-08-07 19:37:07 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2022-08-07 19:37:07 [main] INFO  net.serg.ConfigServer - Started ConfigServer in 129.24 seconds (JVM running for 133.023)
+2022-08-07 19:37:39 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-07 19:37:39 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-08-07 19:37:39 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 17 ms
+2022-08-07 19:37:39 [http-nio-8888-exec-1] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-07 19:39:08 [http-nio-8888-exec-3] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-07 19:40:24 [http-nio-8888-exec-2] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-07 19:40:55 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-08-07 19:42:10 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2022-08-07 19:42:16 [main] INFO  net.serg.ConfigServer - No active profile set, falling back to default profiles: default
+2022-08-07 19:42:22 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=6a61b5a4-e4ee-3827-8063-10120a5746fc
+2022-08-07 19:42:24 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2022-08-07 19:42:24 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2022-08-07 19:42:24 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-08-07 19:42:24 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2022-08-07 19:42:24 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-08-07 19:42:24 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 7618 ms
+2022-08-07 19:42:27 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-08-07 19:42:32 [main] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-07 19:42:38 [main] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/git-upload-pack
+2022-08-07 19:42:39 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/actuator/**'], []
+2022-08-07 19:42:39 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/encrypt/**'], []
+2022-08-07 19:42:39 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/decrypt/**'], []
+2022-08-07 19:42:40 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@68f69ca3, org.springframework.security.web.context.SecurityContextPersistenceFilter@37e491e2, org.springframework.security.web.header.HeaderWriterFilter@6807989e, org.springframework.security.web.csrf.CsrfFilter@31433df9, org.springframework.security.web.authentication.logout.LogoutFilter@6c36051c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1e9d7366, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@25ea068e, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@1e3566e, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@23f8036d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@26679788, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7252bdb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2b058bfd, org.springframework.security.web.session.SessionManagementFilter@31183ee2, org.springframework.security.web.access.ExceptionTranslationFilter@454e9d65, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6fc7e828]
+2022-08-07 19:42:42 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-08-07 19:42:43 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2022-08-07 19:42:45 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2022-08-07 19:42:45 [main] INFO  net.serg.ConfigServer - Started ConfigServer in 36.673 seconds (JVM running for 39.019)
+2022-08-07 19:42:48 [http-nio-8888-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-07 19:42:48 [http-nio-8888-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-08-07 19:42:48 [http-nio-8888-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 20 ms
+2022-08-07 19:42:48 [http-nio-8888-exec-2] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-07 19:43:15 [http-nio-8888-exec-1] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-07 19:44:47 [http-nio-8888-exec-4] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-07 19:44:47 [http-nio-8888-exec-5] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-07 19:48:21 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-08-07 19:49:23 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2022-08-07 19:49:27 [main] INFO  net.serg.ConfigServer - No active profile set, falling back to default profiles: default
+2022-08-07 19:49:34 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=6a61b5a4-e4ee-3827-8063-10120a5746fc
+2022-08-07 19:49:35 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2022-08-07 19:49:35 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2022-08-07 19:49:35 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-08-07 19:49:35 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2022-08-07 19:49:36 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-08-07 19:49:36 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 8305 ms
+2022-08-07 19:49:39 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-08-07 19:49:43 [main] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-07 19:49:48 [main] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/git-upload-pack
+2022-08-07 19:49:50 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/actuator/**'], []
+2022-08-07 19:49:50 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/encrypt/**'], []
+2022-08-07 19:49:50 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/decrypt/**'], []
+2022-08-07 19:49:50 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@34070bd2, org.springframework.security.web.context.SecurityContextPersistenceFilter@4be460e5, org.springframework.security.web.header.HeaderWriterFilter@63d3c9dc, org.springframework.security.web.csrf.CsrfFilter@5b5b8730, org.springframework.security.web.authentication.logout.LogoutFilter@38968752, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@76cf91c9, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@4f2544b0, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@1e7d3d87, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@417446d9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7805478c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5cdda548, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1dd76982, org.springframework.security.web.session.SessionManagementFilter@35d114f4, org.springframework.security.web.access.ExceptionTranslationFilter@16d4024e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@56a09a5c]
+2022-08-07 19:49:51 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-08-07 19:49:51 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2022-08-07 19:49:51 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2022-08-07 19:49:52 [main] INFO  net.serg.ConfigServer - Started ConfigServer in 30.883 seconds (JVM running for 33.074)
+2022-08-07 19:50:26 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-07 19:50:26 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-08-07 19:50:26 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 16 ms
+2022-08-07 19:50:27 [http-nio-8888-exec-1] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-07 19:50:29 [http-nio-8888-exec-2] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-07 19:54:18 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-08-07 19:54:41 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2022-08-07 19:54:44 [main] INFO  net.serg.ConfigServer - No active profile set, falling back to default profiles: default
+2022-08-07 19:54:49 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=6a61b5a4-e4ee-3827-8063-10120a5746fc
+2022-08-07 19:54:51 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2022-08-07 19:54:51 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2022-08-07 19:54:51 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-08-07 19:54:51 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2022-08-07 19:54:52 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-08-07 19:54:52 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 7277 ms
+2022-08-07 19:55:01 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-08-07 19:55:19 [main] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-07 19:55:39 [main] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/git-upload-pack
+2022-08-07 19:55:43 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/actuator/**'], []
+2022-08-07 19:55:43 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/encrypt/**'], []
+2022-08-07 19:55:43 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/decrypt/**'], []
+2022-08-07 19:55:43 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@34070bd2, org.springframework.security.web.context.SecurityContextPersistenceFilter@4be460e5, org.springframework.security.web.header.HeaderWriterFilter@63d3c9dc, org.springframework.security.web.csrf.CsrfFilter@5b5b8730, org.springframework.security.web.authentication.logout.LogoutFilter@38968752, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@76cf91c9, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@4f2544b0, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@1e7d3d87, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@417446d9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7805478c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5cdda548, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1dd76982, org.springframework.security.web.session.SessionManagementFilter@35d114f4, org.springframework.security.web.access.ExceptionTranslationFilter@16d4024e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@56a09a5c]
+2022-08-07 19:55:44 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-08-07 19:55:44 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2022-08-07 19:55:44 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2022-08-07 19:55:44 [main] INFO  net.serg.ConfigServer - Started ConfigServer in 64.374 seconds (JVM running for 66.569)
+2022-08-07 19:55:45 [http-nio-8888-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-07 19:55:45 [http-nio-8888-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-08-07 19:55:45 [http-nio-8888-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 27 ms
+2022-08-07 19:55:45 [http-nio-8888-exec-2] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-07 19:55:47 [http-nio-8888-exec-1] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-07 19:57:59 [http-nio-8888-exec-3] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-07 19:58:00 [http-nio-8888-exec-4] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-07 19:59:25 [http-nio-8888-exec-5] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-07 19:59:25 [http-nio-8888-exec-6] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-07 20:00:33 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-08-07 20:04:05 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2022-08-07 20:04:09 [main] INFO  net.serg.ConfigServer - No active profile set, falling back to default profiles: default
+2022-08-07 20:04:15 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=6a61b5a4-e4ee-3827-8063-10120a5746fc
+2022-08-07 20:04:16 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2022-08-07 20:04:16 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2022-08-07 20:04:16 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-08-07 20:04:16 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2022-08-07 20:04:16 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-08-07 20:04:16 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 7356 ms
+2022-08-07 20:04:20 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-08-07 20:04:30 [main] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-07 20:04:35 [main] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/git-upload-pack
+2022-08-07 20:04:37 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/actuator/**'], []
+2022-08-07 20:04:37 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/encrypt/**'], []
+2022-08-07 20:04:37 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/decrypt/**'], []
+2022-08-07 20:04:38 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4805069b, org.springframework.security.web.context.SecurityContextPersistenceFilter@5cdda548, org.springframework.security.web.header.HeaderWriterFilter@63f3366a, org.springframework.security.web.csrf.CsrfFilter@6e4e60f5, org.springframework.security.web.authentication.logout.LogoutFilter@460e5ffe, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@417446d9, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@ecf028c, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@14ca88bc, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2b058bfd, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5bad555b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@201a8ea7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@f01fc6d, org.springframework.security.web.session.SessionManagementFilter@56f84c9b, org.springframework.security.web.access.ExceptionTranslationFilter@c2e33, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@26bce60d]
+2022-08-07 20:04:39 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-08-07 20:04:39 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2022-08-07 20:04:39 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2022-08-07 20:04:39 [main] INFO  net.serg.ConfigServer - Started ConfigServer in 38.071 seconds (JVM running for 40.369)
+2022-08-07 20:05:13 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-07 20:05:13 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-08-07 20:05:13 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 18 ms
+2022-08-07 20:05:13 [http-nio-8888-exec-2] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-07 20:05:15 [http-nio-8888-exec-1] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-07 20:07:59 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-08-07 20:11:14 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2022-08-07 20:11:19 [main] INFO  net.serg.ConfigServer - No active profile set, falling back to default profiles: default
+2022-08-07 20:11:23 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=6a61b5a4-e4ee-3827-8063-10120a5746fc
+2022-08-07 20:11:24 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2022-08-07 20:11:24 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2022-08-07 20:11:24 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-08-07 20:11:24 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2022-08-07 20:11:25 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-08-07 20:11:25 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5773 ms
+2022-08-07 20:11:27 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-08-07 20:11:30 [main] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-07 20:11:32 [main] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/git-upload-pack
+2022-08-07 20:11:34 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/actuator/**'], []
+2022-08-07 20:11:34 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/encrypt/**'], []
+2022-08-07 20:11:34 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/decrypt/**'], []
+2022-08-07 20:11:34 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7e76a66f, org.springframework.security.web.context.SecurityContextPersistenceFilter@6807989e, org.springframework.security.web.header.HeaderWriterFilter@3684d2c0, org.springframework.security.web.csrf.CsrfFilter@14b48f39, org.springframework.security.web.authentication.logout.LogoutFilter@27a0e6ce, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@26a9c6df, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@70aa58e1, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@72237be8, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1dd76982, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@31183ee2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@41ec4271, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5c5f12e, org.springframework.security.web.session.SessionManagementFilter@454e9d65, org.springframework.security.web.access.ExceptionTranslationFilter@3a1a0bc, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2567c091]
+2022-08-07 20:11:35 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-08-07 20:11:35 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2022-08-07 20:11:35 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2022-08-07 20:11:35 [main] INFO  net.serg.ConfigServer - Started ConfigServer in 22.635 seconds (JVM running for 24.67)
+2022-08-07 20:12:19 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-07 20:12:19 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-08-07 20:12:19 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 24 ms
+2022-08-07 20:12:19 [http-nio-8888-exec-1] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-07 20:12:24 [http-nio-8888-exec-2] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-07 20:20:17 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-08-07 20:21:01 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2022-08-07 20:21:05 [main] INFO  net.serg.ConfigServer - No active profile set, falling back to default profiles: default
+2022-08-07 20:21:10 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=6a61b5a4-e4ee-3827-8063-10120a5746fc
+2022-08-07 20:21:11 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2022-08-07 20:21:11 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2022-08-07 20:21:11 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-08-07 20:21:11 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2022-08-07 20:21:12 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-08-07 20:21:12 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 6628 ms
+2022-08-07 20:21:14 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-08-07 20:21:20 [main] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-07 20:21:23 [main] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/git-upload-pack
+2022-08-07 20:21:25 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/actuator/**'], []
+2022-08-07 20:21:25 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/encrypt/**'], []
+2022-08-07 20:21:25 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/decrypt/**'], []
+2022-08-07 20:21:25 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7e76a66f, org.springframework.security.web.context.SecurityContextPersistenceFilter@6807989e, org.springframework.security.web.header.HeaderWriterFilter@3684d2c0, org.springframework.security.web.csrf.CsrfFilter@14b48f39, org.springframework.security.web.authentication.logout.LogoutFilter@27a0e6ce, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@26a9c6df, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@70aa58e1, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@72237be8, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1dd76982, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@31183ee2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@41ec4271, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5c5f12e, org.springframework.security.web.session.SessionManagementFilter@454e9d65, org.springframework.security.web.access.ExceptionTranslationFilter@3a1a0bc, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2567c091]
+2022-08-07 20:21:26 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-08-07 20:21:26 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2022-08-07 20:21:26 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2022-08-07 20:21:26 [main] INFO  net.serg.ConfigServer - Started ConfigServer in 26.287 seconds (JVM running for 28.298)
+2022-08-07 20:21:53 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-07 20:21:53 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-08-07 20:21:53 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 22 ms
+2022-08-07 20:21:54 [http-nio-8888-exec-1] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-07 20:21:59 [http-nio-8888-exec-2] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-07 20:24:36 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-08-07 20:24:49 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2022-08-07 20:24:53 [main] INFO  net.serg.ConfigServer - No active profile set, falling back to default profiles: default
+2022-08-07 20:25:01 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=6a61b5a4-e4ee-3827-8063-10120a5746fc
+2022-08-07 20:25:03 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2022-08-07 20:25:03 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2022-08-07 20:25:03 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-08-07 20:25:03 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2022-08-07 20:25:04 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-08-07 20:25:04 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 9890 ms
+2022-08-07 20:25:06 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-08-07 20:25:29 [main] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-07 20:25:40 [main] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/git-upload-pack
+2022-08-07 20:25:42 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/actuator/**'], []
+2022-08-07 20:25:42 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/encrypt/**'], []
+2022-08-07 20:25:42 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/decrypt/**'], []
+2022-08-07 20:25:45 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1e3566e, org.springframework.security.web.context.SecurityContextPersistenceFilter@56f84c9b, org.springframework.security.web.header.HeaderWriterFilter@c2e33, org.springframework.security.web.csrf.CsrfFilter@2d4a0671, org.springframework.security.web.authentication.logout.LogoutFilter@45d46254, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@20914835, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@4cd8db31, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@2b058bfd, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@68f69ca3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5cdda548, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@25ea068e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4805069b, org.springframework.security.web.session.SessionManagementFilter@63f3366a, org.springframework.security.web.access.ExceptionTranslationFilter@7805478c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@26a9c6df]
+2022-08-07 20:25:48 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-08-07 20:25:48 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2022-08-07 20:25:49 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2022-08-07 20:25:49 [main] INFO  net.serg.ConfigServer - Started ConfigServer in 61.501 seconds (JVM running for 63.524)
+2022-08-07 20:27:45 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-07 20:27:45 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-08-07 20:27:45 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 17 ms
+2022-08-07 20:27:46 [http-nio-8888-exec-1] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/add-additional/config-server/info/refs?service=git-upload-pack
+2022-08-07 20:27:47 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-5672434872193539049/config-client-elasticsearch_query_web.yml
+2022-08-07 20:27:47 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-5672434872193539049/config-client.yml

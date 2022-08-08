@@ -1,0 +1,40 @@
+2022-08-08 02:27:43 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2022-08-08 02:27:44 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
+2022-08-08 02:27:48 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=elasticsearch-query-web-client,config-client, profiles=[elasticsearch_query_web], label=null, version=d5683ab153039b7f607e405b777bb4a7a7dc005b, state=null
+2022-08-08 02:27:48 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/add-additional/config-server//config-client-elasticsearch_query_web.yml'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/add-additional/config-server//config-client.yml'}]
+2022-08-08 02:27:48 [main] INFO  n.s.e.q.w.c.ElasticQueryWebClientApplication - The following profiles are active: elasticsearch_query_web
+2022-08-08 02:27:49 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=34cd1eca-e806-3b2c-bab7-ad9f2cb28dc5
+2022-08-08 02:27:49 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-08 02:27:49 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-08 02:27:49 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-08 02:27:50 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8184 (http)
+2022-08-08 02:27:50 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8184"]
+2022-08-08 02:27:50 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-08-08 02:27:50 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2022-08-08 02:27:50 [main] INFO  o.a.c.c.C.[.[.[/elasticsearch-query-web-client] - Initializing Spring embedded WebApplicationContext
+2022-08-08 02:27:50 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2316 ms
+2022-08-08 02:27:51 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7675c171, org.springframework.security.web.context.SecurityContextPersistenceFilter@70997a94, org.springframework.security.web.header.HeaderWriterFilter@57e5396b, org.springframework.security.web.csrf.CsrfFilter@35eee641, org.springframework.security.web.authentication.logout.LogoutFilter@3daf03d8, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@3e26482, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6c538eb2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6ee5f485, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@44e4cb76, org.springframework.security.web.session.SessionManagementFilter@62ade015, org.springframework.security.web.access.ExceptionTranslationFilter@3c9ef6e9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2f3928ac]
+2022-08-08 02:27:51 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-08-08 02:27:51 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2022-08-08 02:27:53 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+2022-08-08 02:27:53 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8184"]
+2022-08-08 02:27:53 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8184 (http) with context path '/elasticsearch-query-web-client'
+2022-08-08 02:27:54 [main] INFO  n.s.e.q.w.c.ElasticQueryWebClientApplication - Started ElasticQueryWebClientApplication in 13.516 seconds (JVM running for 15.225)
+2022-08-08 02:28:05 [http-nio-8184-exec-1] INFO  o.a.c.c.C.[.[.[/elasticsearch-query-web-client] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-08 02:28:05 [http-nio-8184-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-08-08 02:28:05 [http-nio-8184-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 45 ms
+2022-08-08 02:28:12 [http-nio-8184-exec-5] WARN  o.a.c.util.SessionIdGeneratorBase - Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [979] milliseconds.
+2022-08-08 02:28:31 [http-nio-8184-exec-2] INFO  n.s.e.q.w.client.api.QueryController - Querying with text asd1
+2022-08-08 02:28:31 [http-nio-8184-exec-2] INFO  n.s.e.q.w.c.s.i.TwitterElasticQueryWebClient - Querying by text asd1
+2022-08-08 02:28:54 [http-nio-8184-exec-4] INFO  n.s.e.q.w.client.api.QueryController - Querying with text java
+2022-08-08 02:28:54 [http-nio-8184-exec-4] INFO  n.s.e.q.w.c.s.i.TwitterElasticQueryWebClient - Querying by text java
+2022-08-08 02:30:15 [http-nio-8184-exec-9] INFO  n.s.e.q.w.client.api.QueryController - Querying with text test
+2022-08-08 02:30:15 [http-nio-8184-exec-9] INFO  n.s.e.q.w.c.s.i.TwitterElasticQueryWebClient - Querying by text test
+2022-08-08 02:30:28 [reactor-http-nio-3] WARN  r.n.http.client.HttpClientConnect - [id: 0xf876db63, L:/127.0.0.1:61723 - R:localhost/127.0.0.1:8185] The connection observed an error
+io.netty.handler.timeout.ReadTimeoutException: null
+2022-08-08 02:30:29 [http-nio-8184-exec-9] ERROR n.s.e.q.w.c.a.e.h.ElasticQueryWebClientErrorHandler - Service runtime exception!
+io.netty.handler.timeout.ReadTimeoutException: null
+2022-08-08 02:31:50 [http-nio-8184-exec-3] INFO  n.s.e.q.w.client.api.QueryController - Querying with text asd2
+2022-08-08 02:31:52 [http-nio-8184-exec-3] INFO  n.s.e.q.w.c.s.i.TwitterElasticQueryWebClient - Querying by text asd2
+2022-08-08 02:33:18 [http-nio-8184-exec-4] INFO  n.s.e.q.w.client.api.QueryController - Querying with text test123
+2022-08-08 02:33:18 [http-nio-8184-exec-4] INFO  n.s.e.q.w.c.s.i.TwitterElasticQueryWebClient - Querying by text test123
