@@ -1,33 +1,33 @@
-2022-08-13 14:29:50 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
-2022-08-13 14:29:52 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
-2022-08-13 14:30:01 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=elasticsearch-query-service,config-client, profiles=[elasticsearch_query], label=null, version=25ab508d668d48465e811ec646e0adda3f57eb7a, state=null
-2022-08-13 14:30:01 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/add-additional/config-server//config-client-elasticsearch_query.yml'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/add-additional/config-server//config-client.yml'}]
-2022-08-13 14:30:01 [main] INFO  n.s.e.q.s.ElasticsearchQueryServiceApplication - The following profiles are active: elasticsearch_query
-2022-08-13 14:30:03 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
-2022-08-13 14:30:03 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
-2022-08-13 14:30:03 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 81ms. Found 1 Elasticsearch repository interfaces.
-2022-08-13 14:30:03 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
-2022-08-13 14:30:03 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
-2022-08-13 14:30:03 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface net.serg.elasticsearch.query.service.dataaccess.repository.UserPermissionRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
-2022-08-13 14:30:03 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 67ms. Found 0 Reactive Elasticsearch repository interfaces.
-2022-08-13 14:30:03 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
-2022-08-13 14:30:03 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2022-08-13 14:30:03 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 40ms. Found 1 JPA repository interfaces.
-2022-08-13 14:30:04 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=e5fc1537-5b07-373e-8a49-34c8d9ba4afd
-2022-08-13 14:30:04 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@3c770db4' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2022-08-13 14:30:04 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2022-08-13 14:30:05 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8998 (http)
-2022-08-13 14:30:05 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8998"]
-2022-08-13 14:30:05 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2022-08-13 14:30:05 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
-2022-08-13 14:30:06 [main] INFO  o.a.c.c.C.[.[.[/elasticsearch-query-service] - Initializing Spring embedded WebApplicationContext
-2022-08-13 14:30:06 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4875 ms
-2022-08-13 14:30:06 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.cloud.autoconfigure.RefreshAutoConfiguration$JpaInvokerConfiguration': Invocation of init method failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker': Invocation of init method failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
-2022-08-13 14:30:06 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
-2022-08-13 14:30:06 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+2022-08-16 14:29:39 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2022-08-16 14:29:42 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
+2022-08-16 14:29:45 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+2022-08-16 14:29:45 [main] WARN  o.s.c.c.c.ConfigServicePropertySourceLocator - Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/elasticsearch-query-service,config-client/elasticsearch_query": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2022-08-16 14:29:45 [main] INFO  n.s.e.q.s.ElasticsearchQueryServiceApplication - The following profiles are active: elasticsearch_query
+2022-08-16 14:29:47 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-08-16 14:29:47 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2022-08-16 14:29:47 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 503ms. Found 1 Elasticsearch repository interfaces.
+2022-08-16 14:29:48 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-08-16 14:29:48 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2022-08-16 14:29:48 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface net.serg.elasticsearch.query.service.dataaccess.repository.UserPermissionRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+2022-08-16 14:29:48 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 50ms. Found 0 Reactive Elasticsearch repository interfaces.
+2022-08-16 14:29:48 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-08-16 14:29:48 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2022-08-16 14:29:48 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 39ms. Found 1 JPA repository interfaces.
+2022-08-16 14:29:49 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=fac383a0-ed9c-3a9d-ad78-73ece6627f0e
+2022-08-16 14:29:49 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@51ac12ac' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-16 14:29:49 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-16 14:29:51 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-08-16 14:29:51 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-08-16 14:29:51 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-08-16 14:29:51 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2022-08-16 14:29:52 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-08-16 14:29:52 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 6849 ms
+2022-08-16 14:29:52 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.cloud.autoconfigure.RefreshAutoConfiguration$JpaInvokerConfiguration': Invocation of init method failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker': Invocation of init method failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2022-08-16 14:29:52 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2022-08-16 14:29:52 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
 
 Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2022-08-13 14:30:06 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+2022-08-16 14:29:52 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
 
 ***************************
 APPLICATION FAILED TO START
@@ -46,668 +46,96 @@ Consider the following:
 	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
 	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
 
-2022-08-13 14:33:50 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
-2022-08-13 14:33:52 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
-2022-08-13 14:33:55 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=elasticsearch-query-service,config-client, profiles=[elasticsearch_query], label=null, version=25ab508d668d48465e811ec646e0adda3f57eb7a, state=null
-2022-08-13 14:33:55 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/add-additional/config-server//config-client-elasticsearch_query.yml'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/add-additional/config-server//config-client.yml'}]
-2022-08-13 14:33:55 [main] INFO  n.s.e.q.s.ElasticsearchQueryServiceApplication - The following profiles are active: elasticsearch_query
-2022-08-13 14:33:58 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
-2022-08-13 14:33:58 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
-2022-08-13 14:33:58 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 133ms. Found 1 Elasticsearch repository interfaces.
-2022-08-13 14:33:58 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
-2022-08-13 14:33:58 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
-2022-08-13 14:33:58 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface net.serg.elasticsearch.query.service.dataaccess.repository.UserPermissionRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
-2022-08-13 14:33:58 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 40ms. Found 0 Reactive Elasticsearch repository interfaces.
-2022-08-13 14:33:58 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
-2022-08-13 14:33:58 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2022-08-13 14:33:58 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 69ms. Found 1 JPA repository interfaces.
-2022-08-13 14:33:59 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=e5fc1537-5b07-373e-8a49-34c8d9ba4afd
-2022-08-13 14:34:00 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@6048e26a' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2022-08-13 14:34:00 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2022-08-13 14:34:01 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8998 (http)
-2022-08-13 14:34:01 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8998"]
-2022-08-13 14:34:01 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2022-08-13 14:34:01 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
-2022-08-13 14:34:01 [main] INFO  o.a.c.c.C.[.[.[/elasticsearch-query-service] - Initializing Spring embedded WebApplicationContext
-2022-08-13 14:34:01 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 6005 ms
-2022-08-13 14:34:01 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.cloud.autoconfigure.RefreshAutoConfiguration$JpaInvokerConfiguration': Invocation of init method failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker': Invocation of init method failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
-2022-08-13 14:34:01 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
-2022-08-13 14:34:01 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2022-08-13 14:34:01 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
-
-Reason: Failed to determine a suitable driver class
-
-
-Action:
-
-Consider the following:
-	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
-	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
-
-2022-08-13 14:48:36 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
-2022-08-13 14:48:39 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
-2022-08-13 14:48:45 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=elasticsearch-query-service,config-client, profiles=[elasticsearch_query], label=null, version=1bfc53e60a6c62575082544f8114a95110c720fe, state=null
-2022-08-13 14:48:45 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/add-additional/config-server//config-client-elasticsearch_query.yml'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/add-additional/config-server//config-client.yml'}]
-2022-08-13 14:48:45 [main] INFO  n.s.e.q.s.ElasticsearchQueryServiceApplication - The following profiles are active: elasticsearch_query
-2022-08-13 14:48:47 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
-2022-08-13 14:48:47 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
-2022-08-13 14:48:47 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 84ms. Found 1 Elasticsearch repository interfaces.
-2022-08-13 14:48:47 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
-2022-08-13 14:48:47 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
-2022-08-13 14:48:47 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface net.serg.elasticsearch.query.service.dataaccess.repository.UserPermissionRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
-2022-08-13 14:48:47 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 35ms. Found 0 Reactive Elasticsearch repository interfaces.
-2022-08-13 14:48:47 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
-2022-08-13 14:48:47 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2022-08-13 14:48:47 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 32ms. Found 1 JPA repository interfaces.
-2022-08-13 14:48:48 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=e5fc1537-5b07-373e-8a49-34c8d9ba4afd
-2022-08-13 14:48:48 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@3caafa67' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2022-08-13 14:48:48 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2022-08-13 14:48:50 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8998 (http)
-2022-08-13 14:48:52 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8998"]
-2022-08-13 14:48:52 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2022-08-13 14:48:52 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
-2022-08-13 14:48:53 [main] INFO  o.a.c.c.C.[.[.[/elasticsearch-query-service] - Initializing Spring embedded WebApplicationContext
-2022-08-13 14:48:53 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 7811 ms
-2022-08-13 14:48:53 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2022-08-13 14:48:54 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2022-08-13 14:48:56 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.cloud.autoconfigure.RefreshAutoConfiguration$JpaInvokerConfiguration': Invocation of init method failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker': Invocation of init method failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #4 of class path resource [init-data.sql]: INSERT INTO public.users( id, username, firstname, lastname) VALUES ('ffe263e9-6b16-4b71-9338-dd5e08d9931b, 'app_super_user', 'Super', 'User');
-
-
-insert into documents(id, document_id)
-values ('c1df7d01-4bd7-40b6-86da-7e2ffabf37f7', 1);
-insert into documents(id, document_id)
-values ('f2b2d644-3a08-4acb-ae07-20569f6f2a01', 2);
-insert into documents(id, document_id)
-values ('90573d2b-9a5d-409e-bbb6-b94189709a19', 3);
-
-insert into user_permissions(user_permission_id, user_id, document_id, permission_type)
-values (uuid_generate_v4(),'de5db545-e144-474e-9f8b-5b5e03348c0', 'c1df7d01-4bd7-40b6-86da-7e2ffabf37f7', 'READ');
-
-insert into user_permissions(user_permission_id, user_id, document_id, permission_type)
-values (uuid_generate_v4(),'349f5563-d6c8-47e4-a438-12bc5d29d252', 'c1df7d01-4bd7-40b6-86da-7e2ffabf37f7', 'READ');
-
-insert into user_permissions(user_permission_id, user_id, document_id, permission_type)
-values (uuid_generate_v4(),'349f5563-d6c8-47e4-a438-12bc5d29d252', 'f2b2d644-3a08-4acb-ae07-20569f6f2a01', 'READ');
-
-insert into user_permissions(user_permission_id, user_id, document_id, permission_type)
-values (uuid_generate_v4(), '349f5563-d6c8-47e4-a438-12bc5d29d252', '90573d2b-9a5d-409e-bbb6-b94189709a19', 'READ');
-
-insert into user_permissions(user_permission_id, user_id, document_id, permission_type)
-values (uuid_generate_v4(), 'ffe263e9-6b16-4b71-9338-dd5e08d9931b', 'c1df7d01-4bd7-40b6-86da-7e2ffabf37f7', 'READ');
-
-; nested exception is org.postgresql.util.PSQLException: Unterminated string literal started at position 1 441 in SQL INSERT INTO public.users( id, username, firstname, lastname) VALUES ('ffe263e9-6b16-4b71-9338-dd5e08d9931b, 'app_super_user', 'Super', 'User');
-
-
-insert into documents(id, document_id)
-values ('c1df7d01-4bd7-40b6-86da-7e2ffabf37f7', 1);
-insert into documents(id, document_id)
-values ('f2b2d644-3a08-4acb-ae07-20569f6f2a01', 2);
-insert into documents(id, document_id)
-values ('90573d2b-9a5d-409e-bbb6-b94189709a19', 3);
-
-insert into user_permissions(user_permission_id, user_id, document_id, permission_type)
-values (uuid_generate_v4(),'de5db545-e144-474e-9f8b-5b5e03348c0', 'c1df7d01-4bd7-40b6-86da-7e2ffabf37f7', 'READ');
-
-insert into user_permissions(user_permission_id, user_id, document_id, permission_type)
-values (uuid_generate_v4(),'349f5563-d6c8-47e4-a438-12bc5d29d252', 'c1df7d01-4bd7-40b6-86da-7e2ffabf37f7', 'READ');
-
-insert into user_permissions(user_permission_id, user_id, document_id, permission_type)
-values (uuid_generate_v4(),'349f5563-d6c8-47e4-a438-12bc5d29d252', 'f2b2d644-3a08-4acb-ae07-20569f6f2a01', 'READ');
-
-insert into user_permissions(user_permission_id, user_id, document_id, permission_type)
-values (uuid_generate_v4(), '349f5563-d6c8-47e4-a438-12bc5d29d252', '90573d2b-9a5d-409e-bbb6-b94189709a19', 'READ');
-
-insert into user_permissions(user_permission_id, user_id, document_id, permission_type)
-values (uuid_generate_v4(), 'ffe263e9-6b16-4b71-9338-dd5e08d9931b', 'c1df7d01-4bd7-40b6-86da-7e2ffabf37f7', 'READ');
-
-. Expected  char
-2022-08-13 14:48:56 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2022-08-13 14:48:56 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2022-08-13 14:48:56 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
-2022-08-13 14:48:56 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2022-08-13 14:48:56 [main] ERROR o.s.boot.SpringApplication - Application run failed
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.cloud.autoconfigure.RefreshAutoConfiguration$JpaInvokerConfiguration': Invocation of init method failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker': Invocation of init method failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #4 of class path resource [init-data.sql]: INSERT INTO public.users( id, username, firstname, lastname) VALUES ('ffe263e9-6b16-4b71-9338-dd5e08d9931b, 'app_super_user', 'Super', 'User');
-
-
-insert into documents(id, document_id)
-values ('c1df7d01-4bd7-40b6-86da-7e2ffabf37f7', 1);
-insert into documents(id, document_id)
-values ('f2b2d644-3a08-4acb-ae07-20569f6f2a01', 2);
-insert into documents(id, document_id)
-values ('90573d2b-9a5d-409e-bbb6-b94189709a19', 3);
-
-insert into user_permissions(user_permission_id, user_id, document_id, permission_type)
-values (uuid_generate_v4(),'de5db545-e144-474e-9f8b-5b5e03348c0', 'c1df7d01-4bd7-40b6-86da-7e2ffabf37f7', 'READ');
-
-insert into user_permissions(user_permission_id, user_id, document_id, permission_type)
-values (uuid_generate_v4(),'349f5563-d6c8-47e4-a438-12bc5d29d252', 'c1df7d01-4bd7-40b6-86da-7e2ffabf37f7', 'READ');
-
-insert into user_permissions(user_permission_id, user_id, document_id, permission_type)
-values (uuid_generate_v4(),'349f5563-d6c8-47e4-a438-12bc5d29d252', 'f2b2d644-3a08-4acb-ae07-20569f6f2a01', 'READ');
-
-insert into user_permissions(user_permission_id, user_id, document_id, permission_type)
-values (uuid_generate_v4(), '349f5563-d6c8-47e4-a438-12bc5d29d252', '90573d2b-9a5d-409e-bbb6-b94189709a19', 'READ');
-
-insert into user_permissions(user_permission_id, user_id, document_id, permission_type)
-values (uuid_generate_v4(), 'ffe263e9-6b16-4b71-9338-dd5e08d9931b', 'c1df7d01-4bd7-40b6-86da-7e2ffabf37f7', 'READ');
-
-; nested exception is org.postgresql.util.PSQLException: Unterminated string literal started at position 1 441 in SQL INSERT INTO public.users( id, username, firstname, lastname) VALUES ('ffe263e9-6b16-4b71-9338-dd5e08d9931b, 'app_super_user', 'Super', 'User');
-
-
-insert into documents(id, document_id)
-values ('c1df7d01-4bd7-40b6-86da-7e2ffabf37f7', 1);
-insert into documents(id, document_id)
-values ('f2b2d644-3a08-4acb-ae07-20569f6f2a01', 2);
-insert into documents(id, document_id)
-values ('90573d2b-9a5d-409e-bbb6-b94189709a19', 3);
-
-insert into user_permissions(user_permission_id, user_id, document_id, permission_type)
-values (uuid_generate_v4(),'de5db545-e144-474e-9f8b-5b5e03348c0', 'c1df7d01-4bd7-40b6-86da-7e2ffabf37f7', 'READ');
-
-insert into user_permissions(user_permission_id, user_id, document_id, permission_type)
-values (uuid_generate_v4(),'349f5563-d6c8-47e4-a438-12bc5d29d252', 'c1df7d01-4bd7-40b6-86da-7e2ffabf37f7', 'READ');
-
-insert into user_permissions(user_permission_id, user_id, document_id, permission_type)
-values (uuid_generate_v4(),'349f5563-d6c8-47e4-a438-12bc5d29d252', 'f2b2d644-3a08-4acb-ae07-20569f6f2a01', 'READ');
-
-insert into user_permissions(user_permission_id, user_id, document_id, permission_type)
-values (uuid_generate_v4(), '349f5563-d6c8-47e4-a438-12bc5d29d252', '90573d2b-9a5d-409e-bbb6-b94189709a19', 'READ');
-
-insert into user_permissions(user_permission_id, user_id, document_id, permission_type)
-values (uuid_generate_v4(), 'ffe263e9-6b16-4b71-9338-dd5e08d9931b', 'c1df7d01-4bd7-40b6-86da-7e2ffabf37f7', 'READ');
-
-. Expected  char
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:160)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:415)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
-	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1109)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
-	at net.serg.elasticsearch.query.service.ElasticsearchQueryServiceApplication.main(ElasticsearchQueryServiceApplication.java:11)
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker': Invocation of init method failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #4 of class path resource [init-data.sql]: INSERT INTO public.users( id, username, firstname, lastname) VALUES ('ffe263e9-6b16-4b71-9338-dd5e08d9931b, 'app_super_user', 'Super', 'User');
-
-
-insert into documents(id, document_id)
-values ('c1df7d01-4bd7-40b6-86da-7e2ffabf37f7', 1);
-insert into documents(id, document_id)
-values ('f2b2d644-3a08-4acb-ae07-20569f6f2a01', 2);
-insert into documents(id, document_id)
-values ('90573d2b-9a5d-409e-bbb6-b94189709a19', 3);
-
-insert into user_permissions(user_permission_id, user_id, document_id, permission_type)
-values (uuid_generate_v4(),'de5db545-e144-474e-9f8b-5b5e03348c0', 'c1df7d01-4bd7-40b6-86da-7e2ffabf37f7', 'READ');
-
-insert into user_permissions(user_permission_id, user_id, document_id, permission_type)
-values (uuid_generate_v4(),'349f5563-d6c8-47e4-a438-12bc5d29d252', 'c1df7d01-4bd7-40b6-86da-7e2ffabf37f7', 'READ');
-
-insert into user_permissions(user_permission_id, user_id, document_id, permission_type)
-values (uuid_generate_v4(),'349f5563-d6c8-47e4-a438-12bc5d29d252', 'f2b2d644-3a08-4acb-ae07-20569f6f2a01', 'READ');
-
-insert into user_permissions(user_permission_id, user_id, document_id, permission_type)
-values (uuid_generate_v4(), '349f5563-d6c8-47e4-a438-12bc5d29d252', '90573d2b-9a5d-409e-bbb6-b94189709a19', 'READ');
-
-insert into user_permissions(user_permission_id, user_id, document_id, permission_type)
-values (uuid_generate_v4(), 'ffe263e9-6b16-4b71-9338-dd5e08d9931b', 'c1df7d01-4bd7-40b6-86da-7e2ffabf37f7', 'READ');
-
-; nested exception is org.postgresql.util.PSQLException: Unterminated string literal started at position 1 441 in SQL INSERT INTO public.users( id, username, firstname, lastname) VALUES ('ffe263e9-6b16-4b71-9338-dd5e08d9931b, 'app_super_user', 'Super', 'User');
-
-
-insert into documents(id, document_id)
-values ('c1df7d01-4bd7-40b6-86da-7e2ffabf37f7', 1);
-insert into documents(id, document_id)
-values ('f2b2d644-3a08-4acb-ae07-20569f6f2a01', 2);
-insert into documents(id, document_id)
-values ('90573d2b-9a5d-409e-bbb6-b94189709a19', 3);
-
-insert into user_permissions(user_permission_id, user_id, document_id, permission_type)
-values (uuid_generate_v4(),'de5db545-e144-474e-9f8b-5b5e03348c0', 'c1df7d01-4bd7-40b6-86da-7e2ffabf37f7', 'READ');
-
-insert into user_permissions(user_permission_id, user_id, document_id, permission_type)
-values (uuid_generate_v4(),'349f5563-d6c8-47e4-a438-12bc5d29d252', 'c1df7d01-4bd7-40b6-86da-7e2ffabf37f7', 'READ');
-
-insert into user_permissions(user_permission_id, user_id, document_id, permission_type)
-values (uuid_generate_v4(),'349f5563-d6c8-47e4-a438-12bc5d29d252', 'f2b2d644-3a08-4acb-ae07-20569f6f2a01', 'READ');
-
-insert into user_permissions(user_permission_id, user_id, document_id, permission_type)
-values (uuid_generate_v4(), '349f5563-d6c8-47e4-a438-12bc5d29d252', '90573d2b-9a5d-409e-bbb6-b94189709a19', 'READ');
-
-insert into user_permissions(user_permission_id, user_id, document_id, permission_type)
-values (uuid_generate_v4(), 'ffe263e9-6b16-4b71-9338-dd5e08d9931b', 'c1df7d01-4bd7-40b6-86da-7e2ffabf37f7', 'READ');
-
-. Expected  char
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1794)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
-	at org.springframework.cloud.autoconfigure.RefreshAutoConfiguration$JpaInvokerConfiguration.init(RefreshAutoConfiguration.java:120)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:333)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:157)
-	... 19 common frames omitted
-Caused by: org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #4 of class path resource [init-data.sql]: INSERT INTO public.users( id, username, firstname, lastname) VALUES ('ffe263e9-6b16-4b71-9338-dd5e08d9931b, 'app_super_user', 'Super', 'User');
-
-
-insert into documents(id, document_id)
-values ('c1df7d01-4bd7-40b6-86da-7e2ffabf37f7', 1);
-insert into documents(id, document_id)
-values ('f2b2d644-3a08-4acb-ae07-20569f6f2a01', 2);
-insert into documents(id, document_id)
-values ('90573d2b-9a5d-409e-bbb6-b94189709a19', 3);
-
-insert into user_permissions(user_permission_id, user_id, document_id, permission_type)
-values (uuid_generate_v4(),'de5db545-e144-474e-9f8b-5b5e03348c0', 'c1df7d01-4bd7-40b6-86da-7e2ffabf37f7', 'READ');
-
-insert into user_permissions(user_permission_id, user_id, document_id, permission_type)
-values (uuid_generate_v4(),'349f5563-d6c8-47e4-a438-12bc5d29d252', 'c1df7d01-4bd7-40b6-86da-7e2ffabf37f7', 'READ');
-
-insert into user_permissions(user_permission_id, user_id, document_id, permission_type)
-values (uuid_generate_v4(),'349f5563-d6c8-47e4-a438-12bc5d29d252', 'f2b2d644-3a08-4acb-ae07-20569f6f2a01', 'READ');
-
-insert into user_permissions(user_permission_id, user_id, document_id, permission_type)
-values (uuid_generate_v4(), '349f5563-d6c8-47e4-a438-12bc5d29d252', '90573d2b-9a5d-409e-bbb6-b94189709a19', 'READ');
-
-insert into user_permissions(user_permission_id, user_id, document_id, permission_type)
-values (uuid_generate_v4(), 'ffe263e9-6b16-4b71-9338-dd5e08d9931b', 'c1df7d01-4bd7-40b6-86da-7e2ffabf37f7', 'READ');
-
-; nested exception is org.postgresql.util.PSQLException: Unterminated string literal started at position 1 441 in SQL INSERT INTO public.users( id, username, firstname, lastname) VALUES ('ffe263e9-6b16-4b71-9338-dd5e08d9931b, 'app_super_user', 'Super', 'User');
-
-
-insert into documents(id, document_id)
-values ('c1df7d01-4bd7-40b6-86da-7e2ffabf37f7', 1);
-insert into documents(id, document_id)
-values ('f2b2d644-3a08-4acb-ae07-20569f6f2a01', 2);
-insert into documents(id, document_id)
-values ('90573d2b-9a5d-409e-bbb6-b94189709a19', 3);
-
-insert into user_permissions(user_permission_id, user_id, document_id, permission_type)
-values (uuid_generate_v4(),'de5db545-e144-474e-9f8b-5b5e03348c0', 'c1df7d01-4bd7-40b6-86da-7e2ffabf37f7', 'READ');
-
-insert into user_permissions(user_permission_id, user_id, document_id, permission_type)
-values (uuid_generate_v4(),'349f5563-d6c8-47e4-a438-12bc5d29d252', 'c1df7d01-4bd7-40b6-86da-7e2ffabf37f7', 'READ');
-
-insert into user_permissions(user_permission_id, user_id, document_id, permission_type)
-values (uuid_generate_v4(),'349f5563-d6c8-47e4-a438-12bc5d29d252', 'f2b2d644-3a08-4acb-ae07-20569f6f2a01', 'READ');
-
-insert into user_permissions(user_permission_id, user_id, document_id, permission_type)
-values (uuid_generate_v4(), '349f5563-d6c8-47e4-a438-12bc5d29d252', '90573d2b-9a5d-409e-bbb6-b94189709a19', 'READ');
-
-insert into user_permissions(user_permission_id, user_id, document_id, permission_type)
-values (uuid_generate_v4(), 'ffe263e9-6b16-4b71-9338-dd5e08d9931b', 'c1df7d01-4bd7-40b6-86da-7e2ffabf37f7', 'READ');
-
-. Expected  char
-	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:622)
-	at org.springframework.jdbc.datasource.init.ResourceDatabasePopulator.populate(ResourceDatabasePopulator.java:254)
-	at org.springframework.jdbc.datasource.init.DatabasePopulatorUtils.execute(DatabasePopulatorUtils.java:49)
-	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializer.runScripts(DataSourceInitializer.java:202)
-	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializer.initSchema(DataSourceInitializer.java:119)
-	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker.onApplicationEvent(DataSourceInitializerInvoker.java:91)
-	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker.onApplicationEvent(DataSourceInitializerInvoker.java:38)
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
-	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:404)
-	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:361)
-	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker.initialize(DataSourceInitializerInvoker.java:72)
-	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker.afterPropertiesSet(DataSourceInitializerInvoker.java:65)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1790)
-	... 33 common frames omitted
-Caused by: org.postgresql.util.PSQLException: Unterminated string literal started at position 1 441 in SQL INSERT INTO public.users( id, username, firstname, lastname) VALUES ('ffe263e9-6b16-4b71-9338-dd5e08d9931b, 'app_super_user', 'Super', 'User');
-
-
-insert into documents(id, document_id)
-values ('c1df7d01-4bd7-40b6-86da-7e2ffabf37f7', 1);
-insert into documents(id, document_id)
-values ('f2b2d644-3a08-4acb-ae07-20569f6f2a01', 2);
-insert into documents(id, document_id)
-values ('90573d2b-9a5d-409e-bbb6-b94189709a19', 3);
-
-insert into user_permissions(user_permission_id, user_id, document_id, permission_type)
-values (uuid_generate_v4(),'de5db545-e144-474e-9f8b-5b5e03348c0', 'c1df7d01-4bd7-40b6-86da-7e2ffabf37f7', 'READ');
-
-insert into user_permissions(user_permission_id, user_id, document_id, permission_type)
-values (uuid_generate_v4(),'349f5563-d6c8-47e4-a438-12bc5d29d252', 'c1df7d01-4bd7-40b6-86da-7e2ffabf37f7', 'READ');
-
-insert into user_permissions(user_permission_id, user_id, document_id, permission_type)
-values (uuid_generate_v4(),'349f5563-d6c8-47e4-a438-12bc5d29d252', 'f2b2d644-3a08-4acb-ae07-20569f6f2a01', 'READ');
-
-insert into user_permissions(user_permission_id, user_id, document_id, permission_type)
-values (uuid_generate_v4(), '349f5563-d6c8-47e4-a438-12bc5d29d252', '90573d2b-9a5d-409e-bbb6-b94189709a19', 'READ');
-
-insert into user_permissions(user_permission_id, user_id, document_id, permission_type)
-values (uuid_generate_v4(), 'ffe263e9-6b16-4b71-9338-dd5e08d9931b', 'c1df7d01-4bd7-40b6-86da-7e2ffabf37f7', 'READ');
-
-. Expected  char
-	at org.postgresql.core.Parser.checkParsePosition(Parser.java:1328)
-	at org.postgresql.core.Parser.parseSql(Parser.java:1235)
-	at org.postgresql.core.Parser.replaceProcessing(Parser.java:1179)
-	at org.postgresql.core.CachedQueryCreateAction.create(CachedQueryCreateAction.java:43)
-	at org.postgresql.core.QueryExecutorBase.createQueryByKey(QueryExecutorBase.java:337)
-	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:300)
-	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:284)
-	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:279)
-	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95)
-	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
-	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:601)
-	... 48 common frames omitted
-2022-08-13 14:53:15 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
-2022-08-13 14:53:18 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
-2022-08-13 14:53:20 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=elasticsearch-query-service,config-client, profiles=[elasticsearch_query], label=null, version=1bfc53e60a6c62575082544f8114a95110c720fe, state=null
-2022-08-13 14:53:20 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/add-additional/config-server//config-client-elasticsearch_query.yml'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/add-additional/config-server//config-client.yml'}]
-2022-08-13 14:53:20 [main] INFO  n.s.e.q.s.ElasticsearchQueryServiceApplication - The following profiles are active: elasticsearch_query
-2022-08-13 14:53:24 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
-2022-08-13 14:53:24 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
-2022-08-13 14:53:24 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 117ms. Found 1 Elasticsearch repository interfaces.
-2022-08-13 14:53:24 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
-2022-08-13 14:53:24 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
-2022-08-13 14:53:24 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface net.serg.elasticsearch.query.service.dataaccess.repository.UserPermissionRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
-2022-08-13 14:53:24 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 51ms. Found 0 Reactive Elasticsearch repository interfaces.
-2022-08-13 14:53:24 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
-2022-08-13 14:53:24 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2022-08-13 14:53:24 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 43ms. Found 1 JPA repository interfaces.
-2022-08-13 14:53:25 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=e5fc1537-5b07-373e-8a49-34c8d9ba4afd
-2022-08-13 14:53:26 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@4e22368c' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2022-08-13 14:53:26 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2022-08-13 14:53:28 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8998 (http)
-2022-08-13 14:53:28 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8998"]
-2022-08-13 14:53:28 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2022-08-13 14:53:28 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
-2022-08-13 14:53:28 [main] INFO  o.a.c.c.C.[.[.[/elasticsearch-query-service] - Initializing Spring embedded WebApplicationContext
-2022-08-13 14:53:28 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 7507 ms
-2022-08-13 14:53:28 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2022-08-13 14:53:29 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2022-08-13 14:53:30 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.cloud.autoconfigure.RefreshAutoConfiguration$JpaInvokerConfiguration': Invocation of init method failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker': Invocation of init method failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #8 of class path resource [init-data.sql]: insert into user_permissions(user_permission_id, user_id, document_id, permission_type) values (uuid_generate_v4(),'de5db545-e144-474e-9f8b-5b5e03348c0', 'c1df7d01-4bd7-40b6-86da-7e2ffabf37f7', 'READ'); nested exception is org.postgresql.util.PSQLException: ОШИБКА: неверный синтаксис для типа uuid: "de5db545-e144-474e-9f8b-5b5e03348c0"
-  Позиция: 116
-2022-08-13 14:53:30 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2022-08-13 14:53:30 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2022-08-13 14:53:30 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
-2022-08-13 14:53:30 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2022-08-13 14:53:30 [main] ERROR o.s.boot.SpringApplication - Application run failed
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.cloud.autoconfigure.RefreshAutoConfiguration$JpaInvokerConfiguration': Invocation of init method failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker': Invocation of init method failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #8 of class path resource [init-data.sql]: insert into user_permissions(user_permission_id, user_id, document_id, permission_type) values (uuid_generate_v4(),'de5db545-e144-474e-9f8b-5b5e03348c0', 'c1df7d01-4bd7-40b6-86da-7e2ffabf37f7', 'READ'); nested exception is org.postgresql.util.PSQLException: ОШИБКА: неверный синтаксис для типа uuid: "de5db545-e144-474e-9f8b-5b5e03348c0"
-  Позиция: 116
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:160)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:415)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
-	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1109)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
-	at net.serg.elasticsearch.query.service.ElasticsearchQueryServiceApplication.main(ElasticsearchQueryServiceApplication.java:11)
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker': Invocation of init method failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #8 of class path resource [init-data.sql]: insert into user_permissions(user_permission_id, user_id, document_id, permission_type) values (uuid_generate_v4(),'de5db545-e144-474e-9f8b-5b5e03348c0', 'c1df7d01-4bd7-40b6-86da-7e2ffabf37f7', 'READ'); nested exception is org.postgresql.util.PSQLException: ОШИБКА: неверный синтаксис для типа uuid: "de5db545-e144-474e-9f8b-5b5e03348c0"
-  Позиция: 116
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1794)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
-	at org.springframework.cloud.autoconfigure.RefreshAutoConfiguration$JpaInvokerConfiguration.init(RefreshAutoConfiguration.java:120)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:333)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:157)
-	... 19 common frames omitted
-Caused by: org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #8 of class path resource [init-data.sql]: insert into user_permissions(user_permission_id, user_id, document_id, permission_type) values (uuid_generate_v4(),'de5db545-e144-474e-9f8b-5b5e03348c0', 'c1df7d01-4bd7-40b6-86da-7e2ffabf37f7', 'READ'); nested exception is org.postgresql.util.PSQLException: ОШИБКА: неверный синтаксис для типа uuid: "de5db545-e144-474e-9f8b-5b5e03348c0"
-  Позиция: 116
-	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:622)
-	at org.springframework.jdbc.datasource.init.ResourceDatabasePopulator.populate(ResourceDatabasePopulator.java:254)
-	at org.springframework.jdbc.datasource.init.DatabasePopulatorUtils.execute(DatabasePopulatorUtils.java:49)
-	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializer.runScripts(DataSourceInitializer.java:202)
-	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializer.initSchema(DataSourceInitializer.java:119)
-	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker.onApplicationEvent(DataSourceInitializerInvoker.java:91)
-	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker.onApplicationEvent(DataSourceInitializerInvoker.java:38)
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
-	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:404)
-	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:361)
-	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker.initialize(DataSourceInitializerInvoker.java:72)
-	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker.afterPropertiesSet(DataSourceInitializerInvoker.java:65)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1790)
-	... 33 common frames omitted
-Caused by: org.postgresql.util.PSQLException: ОШИБКА: неверный синтаксис для типа uuid: "de5db545-e144-474e-9f8b-5b5e03348c0"
-  Позиция: 116
-	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2553)
-	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2285)
-	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:323)
-	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:473)
-	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:393)
-	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:322)
-	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:308)
-	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:284)
-	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:279)
-	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95)
-	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
-	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:601)
-	... 48 common frames omitted
-2022-08-13 14:59:11 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
-2022-08-13 14:59:15 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
-2022-08-13 14:59:19 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=elasticsearch-query-service,config-client, profiles=[elasticsearch_query], label=null, version=1bfc53e60a6c62575082544f8114a95110c720fe, state=null
-2022-08-13 14:59:19 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/add-additional/config-server//config-client-elasticsearch_query.yml'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/add-additional/config-server//config-client.yml'}]
-2022-08-13 14:59:19 [main] INFO  n.s.e.q.s.ElasticsearchQueryServiceApplication - The following profiles are active: elasticsearch_query
-2022-08-13 14:59:20 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
-2022-08-13 14:59:20 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
-2022-08-13 14:59:21 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 104ms. Found 1 Elasticsearch repository interfaces.
-2022-08-13 14:59:24 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
-2022-08-13 14:59:24 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
-2022-08-13 14:59:24 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface net.serg.elasticsearch.query.service.dataaccess.repository.UserPermissionRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
-2022-08-13 14:59:24 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 41ms. Found 0 Reactive Elasticsearch repository interfaces.
-2022-08-13 14:59:25 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
-2022-08-13 14:59:25 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2022-08-13 14:59:27 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 572ms. Found 1 JPA repository interfaces.
-2022-08-13 14:59:34 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=e5fc1537-5b07-373e-8a49-34c8d9ba4afd
-2022-08-13 14:59:35 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@4e22368c' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2022-08-13 14:59:35 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2022-08-13 14:59:37 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8998 (http)
-2022-08-13 14:59:37 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8998"]
-2022-08-13 14:59:37 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2022-08-13 14:59:37 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
-2022-08-13 14:59:37 [main] INFO  o.a.c.c.C.[.[.[/elasticsearch-query-service] - Initializing Spring embedded WebApplicationContext
-2022-08-13 14:59:37 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 18443 ms
-2022-08-13 14:59:38 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2022-08-13 14:59:38 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2022-08-13 14:59:40 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-2022-08-13 14:59:40 [task-1] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-08-13 14:59:40 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class org.springframework.data.geo.Point to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
-2022-08-13 14:59:40 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.geo.Point as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
-2022-08-13 14:59:40 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class org.springframework.data.elasticsearch.core.geo.GeoPoint to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
-2022-08-13 14:59:40 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.elasticsearch.core.geo.GeoPoint as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
-2022-08-13 14:59:40 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class org.springframework.data.geo.Point to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
-2022-08-13 14:59:40 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.geo.Point as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
-2022-08-13 14:59:40 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class org.springframework.data.elasticsearch.core.geo.GeoPoint to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
-2022-08-13 14:59:40 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.elasticsearch.core.geo.GeoPoint as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
-2022-08-13 14:59:41 [task-1] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.21.Final
-2022-08-13 14:59:41 [task-1] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2022-08-13 14:59:42 [task-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
-2022-08-13 14:59:44 [task-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-08-13 14:59:44 [task-1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-08-13 14:59:44 [main] INFO  o.s.d.e.support.VersionInfo - Version Spring Data Elasticsearch: 4.0.4.RELEASE
-2022-08-13 14:59:44 [main] INFO  o.s.d.e.support.VersionInfo - Version Elasticsearch Client in build: 7.6.2
-2022-08-13 14:59:44 [main] INFO  o.s.d.e.support.VersionInfo - Version Elasticsearch Client used: 7.9.1
-2022-08-13 14:59:44 [main] WARN  o.s.d.e.support.VersionInfo - Version mismatch in between Elasticsearch Clients build/use: 7.6.2 - 7.9.1
-2022-08-13 14:59:47 [main] WARN  o.s.d.e.r.s.AbstractElasticsearchRepository - Cannot create index: Connection refused: no further information; nested exception is java.lang.RuntimeException: Connection refused: no further information
-2022-08-13 14:59:50 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/api-docs'], []
-2022-08-13 14:59:50 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5598dff2, org.springframework.security.web.context.SecurityContextPersistenceFilter@49005dc4, org.springframework.security.web.header.HeaderWriterFilter@7e2e0b8a, org.springframework.security.web.authentication.logout.LogoutFilter@22ee1ad7, org.springframework.security.oauth2.server.resource.web.BearerTokenAuthenticationFilter@662d3e85, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@25d9298e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@705d72f0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@92b1bda, org.springframework.security.web.session.SessionManagementFilter@74faf450, org.springframework.security.web.access.ExceptionTranslationFilter@4a8bf1dc, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@74cff17c]
-2022-08-13 14:59:51 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8998"]
-2022-08-13 14:59:51 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8998 (http) with context path '/elasticsearch-query-service'
-2022-08-13 14:59:52 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Triggering deferred initialization of Spring Data repositories…
-2022-08-13 14:59:52 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Spring Data repositories initialized!
-2022-08-13 14:59:52 [main] INFO  n.s.e.q.s.ElasticsearchQueryServiceApplication - Started ElasticsearchQueryServiceApplication in 43.441 seconds (JVM running for 45.523)
-2022-08-13 16:00:11 [http-nio-8998-exec-1] INFO  o.a.c.c.C.[.[.[/elasticsearch-query-service] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-08-13 16:00:11 [http-nio-8998-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2022-08-13 16:00:12 [http-nio-8998-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1215 ms
-2022-08-13 16:11:20 [SpringContextShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-08-13 16:11:20 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
-2022-08-13 16:11:20 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2022-08-13 16:11:21 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2022-08-13 16:12:16 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
-2022-08-13 16:12:27 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
-2022-08-13 16:12:32 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=elasticsearch-query-service,config-client, profiles=[elasticsearch_query], label=null, version=1bfc53e60a6c62575082544f8114a95110c720fe, state=null
-2022-08-13 16:12:32 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/add-additional/config-server//config-client-elasticsearch_query.yml'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/add-additional/config-server//config-client.yml'}]
-2022-08-13 16:12:32 [main] INFO  n.s.e.q.s.ElasticsearchQueryServiceApplication - The following profiles are active: elasticsearch_query
-2022-08-13 16:12:35 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
-2022-08-13 16:12:35 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
-2022-08-13 16:12:35 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 99ms. Found 1 Elasticsearch repository interfaces.
-2022-08-13 16:12:37 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
-2022-08-13 16:12:37 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
-2022-08-13 16:12:37 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface net.serg.elasticsearch.query.service.dataaccess.repository.UserPermissionRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
-2022-08-13 16:12:37 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 56ms. Found 0 Reactive Elasticsearch repository interfaces.
-2022-08-13 16:12:37 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
-2022-08-13 16:12:37 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2022-08-13 16:12:37 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 63ms. Found 1 JPA repository interfaces.
-2022-08-13 16:12:38 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=e5fc1537-5b07-373e-8a49-34c8d9ba4afd
-2022-08-13 16:12:38 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@69cd7630' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2022-08-13 16:12:38 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2022-08-13 16:12:39 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8998 (http)
-2022-08-13 16:12:39 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8998"]
-2022-08-13 16:12:39 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2022-08-13 16:12:39 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
-2022-08-13 16:12:40 [main] INFO  o.a.c.c.C.[.[.[/elasticsearch-query-service] - Initializing Spring embedded WebApplicationContext
-2022-08-13 16:12:40 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 7369 ms
-2022-08-13 16:12:40 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2022-08-13 16:12:41 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2022-08-13 16:12:41 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-2022-08-13 16:12:42 [task-1] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-08-13 16:12:42 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class org.springframework.data.geo.Point to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
-2022-08-13 16:12:42 [task-1] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.21.Final
-2022-08-13 16:12:42 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.geo.Point as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
-2022-08-13 16:12:42 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class org.springframework.data.elasticsearch.core.geo.GeoPoint to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
-2022-08-13 16:12:42 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.elasticsearch.core.geo.GeoPoint as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
-2022-08-13 16:12:42 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class org.springframework.data.geo.Point to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
-2022-08-13 16:12:42 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.geo.Point as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
-2022-08-13 16:12:42 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class org.springframework.data.elasticsearch.core.geo.GeoPoint to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
-2022-08-13 16:12:42 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.elasticsearch.core.geo.GeoPoint as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
-2022-08-13 16:12:43 [task-1] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2022-08-13 16:12:44 [task-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
-2022-08-13 16:12:46 [task-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-08-13 16:12:46 [task-1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-08-13 16:12:46 [main] INFO  o.s.d.e.support.VersionInfo - Version Spring Data Elasticsearch: 4.0.4.RELEASE
-2022-08-13 16:12:46 [main] INFO  o.s.d.e.support.VersionInfo - Version Elasticsearch Client in build: 7.6.2
-2022-08-13 16:12:46 [main] INFO  o.s.d.e.support.VersionInfo - Version Elasticsearch Client used: 7.9.1
-2022-08-13 16:12:46 [main] WARN  o.s.d.e.support.VersionInfo - Version mismatch in between Elasticsearch Clients build/use: 7.6.2 - 7.9.1
-2022-08-13 16:12:49 [main] WARN  o.s.d.e.r.s.AbstractElasticsearchRepository - Cannot create index: Connection refused: no further information; nested exception is java.lang.RuntimeException: Connection refused: no further information
-2022-08-13 16:12:54 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/api-docs'], []
-2022-08-13 16:12:54 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@23ffc910, org.springframework.security.web.context.SecurityContextPersistenceFilter@4a8bf1dc, org.springframework.security.web.header.HeaderWriterFilter@3538a129, org.springframework.security.web.authentication.logout.LogoutFilter@17fa14a3, org.springframework.security.oauth2.server.resource.web.BearerTokenAuthenticationFilter@279e8bc0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7e2e0b8a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@52d181ed, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@35277c6c, org.springframework.security.web.session.SessionManagementFilter@3065efd0, org.springframework.security.web.access.ExceptionTranslationFilter@742dbac8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7f31937b]
-2022-08-13 16:12:56 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8998"]
-2022-08-13 16:12:56 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8998 (http) with context path '/elasticsearch-query-service'
-2022-08-13 16:12:56 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Triggering deferred initialization of Spring Data repositories…
-2022-08-13 16:12:57 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Spring Data repositories initialized!
-2022-08-13 16:12:57 [main] INFO  n.s.e.q.s.ElasticsearchQueryServiceApplication - Started ElasticsearchQueryServiceApplication in 43.506 seconds (JVM running for 68.789)
-2022-08-13 16:17:44 [SpringContextShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-08-13 16:17:45 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
-2022-08-13 16:17:45 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2022-08-13 16:17:45 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2022-08-13 16:17:57 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
-2022-08-13 16:18:14 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
-2022-08-13 16:18:44 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=elasticsearch-query-service,config-client, profiles=[elasticsearch_query], label=null, version=1bfc53e60a6c62575082544f8114a95110c720fe, state=null
-2022-08-13 16:18:44 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/add-additional/config-server//config-client-elasticsearch_query.yml'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/add-additional/config-server//config-client.yml'}]
-2022-08-13 16:18:44 [main] INFO  n.s.e.q.s.ElasticsearchQueryServiceApplication - The following profiles are active: elasticsearch_query
-2022-08-13 16:18:46 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
-2022-08-13 16:18:46 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
-2022-08-13 16:18:46 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 87ms. Found 1 Elasticsearch repository interfaces.
-2022-08-13 16:18:47 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
-2022-08-13 16:18:47 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
-2022-08-13 16:18:47 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface net.serg.elasticsearch.query.service.dataaccess.repository.UserPermissionRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
-2022-08-13 16:18:47 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 43ms. Found 0 Reactive Elasticsearch repository interfaces.
-2022-08-13 16:18:47 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
-2022-08-13 16:18:47 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2022-08-13 16:18:47 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 33ms. Found 1 JPA repository interfaces.
-2022-08-13 16:18:48 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=e5fc1537-5b07-373e-8a49-34c8d9ba4afd
-2022-08-13 16:18:48 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@20801cbb' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2022-08-13 16:18:48 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2022-08-13 16:18:52 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8183 (http)
-2022-08-13 16:18:52 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8183"]
-2022-08-13 16:18:52 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2022-08-13 16:18:52 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
-2022-08-13 16:18:52 [main] INFO  o.a.c.c.C.[.[.[/elasticsearch-query-service] - Initializing Spring embedded WebApplicationContext
-2022-08-13 16:18:52 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 8030 ms
-2022-08-13 16:18:53 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2022-08-13 16:18:53 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2022-08-13 16:18:54 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-2022-08-13 16:18:54 [task-1] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-08-13 16:18:54 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class org.springframework.data.geo.Point to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
-2022-08-13 16:18:54 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.geo.Point as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
-2022-08-13 16:18:54 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class org.springframework.data.elasticsearch.core.geo.GeoPoint to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
-2022-08-13 16:18:54 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.elasticsearch.core.geo.GeoPoint as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
-2022-08-13 16:18:54 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class org.springframework.data.geo.Point to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
-2022-08-13 16:18:54 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.geo.Point as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
-2022-08-13 16:18:54 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class org.springframework.data.elasticsearch.core.geo.GeoPoint to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
-2022-08-13 16:18:54 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.elasticsearch.core.geo.GeoPoint as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
-2022-08-13 16:18:54 [task-1] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.21.Final
-2022-08-13 16:18:55 [task-1] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2022-08-13 16:18:56 [task-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
-2022-08-13 16:18:58 [task-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-08-13 16:18:58 [task-1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-08-13 16:18:58 [main] INFO  o.s.d.e.support.VersionInfo - Version Spring Data Elasticsearch: 4.0.4.RELEASE
-2022-08-13 16:18:58 [main] INFO  o.s.d.e.support.VersionInfo - Version Elasticsearch Client in build: 7.6.2
-2022-08-13 16:18:58 [main] INFO  o.s.d.e.support.VersionInfo - Version Elasticsearch Client used: 7.9.1
-2022-08-13 16:18:58 [main] WARN  o.s.d.e.support.VersionInfo - Version mismatch in between Elasticsearch Clients build/use: 7.6.2 - 7.9.1
-2022-08-13 16:19:01 [main] WARN  o.s.d.e.r.s.AbstractElasticsearchRepository - Cannot create index: Connection refused: no further information; nested exception is java.lang.RuntimeException: Connection refused: no further information
-2022-08-13 16:19:05 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/api-docs'], []
-2022-08-13 16:19:05 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4a9412c4, org.springframework.security.web.context.SecurityContextPersistenceFilter@79e9c14, org.springframework.security.web.header.HeaderWriterFilter@4b9dc62f, org.springframework.security.web.authentication.logout.LogoutFilter@46d18a33, org.springframework.security.oauth2.server.resource.web.BearerTokenAuthenticationFilter@66859ea9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@575e862c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3adeca1f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7d15c513, org.springframework.security.web.session.SessionManagementFilter@dddcd91, org.springframework.security.web.access.ExceptionTranslationFilter@d99df7a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3c4e23be]
-2022-08-13 16:19:06 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8183"]
-2022-08-13 16:19:06 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8183 (http) with context path '/elasticsearch-query-service'
-2022-08-13 16:19:07 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Triggering deferred initialization of Spring Data repositories…
-2022-08-13 16:19:07 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Spring Data repositories initialized!
-2022-08-13 16:19:07 [main] INFO  n.s.e.q.s.ElasticsearchQueryServiceApplication - Started ElasticsearchQueryServiceApplication in 73.234 seconds (JVM running for 77.369)
-2022-08-13 16:29:15 [http-nio-8183-exec-1] INFO  o.a.c.c.C.[.[.[/elasticsearch-query-service] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-08-13 16:29:15 [http-nio-8183-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2022-08-13 16:29:15 [http-nio-8183-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 42 ms
-2022-08-13 16:29:16 [http-nio-8183-exec-1] INFO  n.s.e.q.s.b.i.TwitterQueryUserService - Finding permissions by username app_user
-2022-08-13 16:29:17 [http-nio-8183-exec-1] INFO  n.s.e.q.s.b.i.TwitterElasticsearchQueryService - Querying elasticsearch by text ggg
-2022-08-13 16:29:17 [http-nio-8183-exec-1] INFO  n.s.e.util.ElasticsearchQueryUtil - Field from config: text
-2022-08-13 16:29:20 [http-nio-8183-exec-1] ERROR n.s.e.q.s.c.e.h.ElasticsearchQueryServiceErrorHandler - Service runtime exception!
+2022-08-16 14:31:51 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2022-08-16 14:31:54 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
+2022-08-16 14:31:57 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=elasticsearch-query-service,config-client, profiles=[elasticsearch_query], label=null, version=6a0064969dfc6f327ebfadcc267cf6c8aaf8dd79, state=null
+2022-08-16 14:31:57 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/add-additional/config-server//config-client-elasticsearch_query.yml'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/add-additional/config-server//config-client.yml'}]
+2022-08-16 14:31:57 [main] INFO  n.s.e.q.s.ElasticsearchQueryServiceApplication - The following profiles are active: elasticsearch_query
+2022-08-16 14:31:59 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-08-16 14:31:59 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2022-08-16 14:31:59 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 297ms. Found 1 Elasticsearch repository interfaces.
+2022-08-16 14:32:00 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-08-16 14:32:00 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2022-08-16 14:32:00 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface net.serg.elasticsearch.query.service.dataaccess.repository.UserPermissionRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+2022-08-16 14:32:00 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 58ms. Found 0 Reactive Elasticsearch repository interfaces.
+2022-08-16 14:32:00 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-08-16 14:32:00 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2022-08-16 14:32:00 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 49ms. Found 1 JPA repository interfaces.
+2022-08-16 14:32:01 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=ec9a75d8-77d5-3a02-8763-6bdaa608f6d5
+2022-08-16 14:32:01 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@2f2e4bde' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-16 14:32:01 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-16 14:32:02 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8183 (http)
+2022-08-16 14:32:02 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8183"]
+2022-08-16 14:32:02 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-08-16 14:32:02 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2022-08-16 14:32:03 [main] INFO  o.a.c.c.C.[.[.[/elasticsearch-query-service] - Initializing Spring embedded WebApplicationContext
+2022-08-16 14:32:03 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5273 ms
+2022-08-16 14:32:03 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2022-08-16 14:32:03 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2022-08-16 14:32:04 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-08-16 14:32:05 [task-1] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-16 14:32:05 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class org.springframework.data.geo.Point to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-08-16 14:32:05 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.geo.Point as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-08-16 14:32:05 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class org.springframework.data.elasticsearch.core.geo.GeoPoint to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-08-16 14:32:05 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.elasticsearch.core.geo.GeoPoint as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-08-16 14:32:05 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class org.springframework.data.geo.Point to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-08-16 14:32:05 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.geo.Point as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-08-16 14:32:05 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class org.springframework.data.elasticsearch.core.geo.GeoPoint to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-08-16 14:32:05 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.elasticsearch.core.geo.GeoPoint as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-08-16 14:32:05 [task-1] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.21.Final
+2022-08-16 14:32:06 [task-1] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2022-08-16 14:32:07 [task-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2022-08-16 14:32:08 [task-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-16 14:32:08 [task-1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-16 14:32:09 [main] INFO  o.s.d.e.support.VersionInfo - Version Spring Data Elasticsearch: 4.0.4.RELEASE
+2022-08-16 14:32:09 [main] INFO  o.s.d.e.support.VersionInfo - Version Elasticsearch Client in build: 7.6.2
+2022-08-16 14:32:09 [main] INFO  o.s.d.e.support.VersionInfo - Version Elasticsearch Client used: 7.9.1
+2022-08-16 14:32:09 [main] WARN  o.s.d.e.support.VersionInfo - Version mismatch in between Elasticsearch Clients build/use: 7.6.2 - 7.9.1
+2022-08-16 14:32:12 [main] WARN  o.s.d.e.r.s.AbstractElasticsearchRepository - Cannot create index: Connection refused: no further information; nested exception is java.lang.RuntimeException: Connection refused: no further information
+2022-08-16 14:32:13 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-08-16 14:32:13 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-08-16 14:32:13 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-08-16 14:32:13 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-08-16 14:32:16 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/api-docs'], []
+2022-08-16 14:32:16 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6e48dc84, org.springframework.security.web.context.SecurityContextPersistenceFilter@12ef8410, org.springframework.security.web.header.HeaderWriterFilter@526ae1fc, org.springframework.security.web.authentication.logout.LogoutFilter@7af85b32, org.springframework.security.oauth2.server.resource.web.BearerTokenAuthenticationFilter@21590b35, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@71bebddf, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@238fcafa, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@633aedeb, org.springframework.security.web.session.SessionManagementFilter@6508e82, org.springframework.security.web.access.ExceptionTranslationFilter@199dee18, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@53a2dbf2]
+2022-08-16 14:32:17 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses Jersey
+2022-08-16 14:32:18 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+2022-08-16 14:32:18 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2022-08-16 14:32:18 [main] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2022-08-16 14:32:18 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2022-08-16 14:32:18 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2022-08-16 14:32:19 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2022-08-16 14:32:19 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2022-08-16 14:32:19 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022-08-16 14:32:20 [main] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2022-08-16 14:32:20 [main] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2022-08-16 14:32:20 [main] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2022-08-16 14:32:20 [main] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2022-08-16 14:32:20 [main] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2022-08-16 14:32:20 [main] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2022-08-16 14:32:20 [main] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2022-08-16 14:32:20 [main] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2022-08-16 14:32:20 [main] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 2
+2022-08-16 14:32:20 [main] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-08-16 14:32:20 [main] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1660638740372 with initial instances count: 1
+2022-08-16 14:32:20 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application ELASTICSEARCH-QUERY-SERVICE with eureka with status UP
+2022-08-16 14:32:20 [main] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1660638740387, current=UP, previous=STARTING]
+2022-08-16 14:32:20 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_ELASTICSEARCH-QUERY-SERVICE/host.docker.internal:elasticsearch-query-service:8183: registering service...
+2022-08-16 14:32:20 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8183"]
+2022-08-16 14:32:20 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_ELASTICSEARCH-QUERY-SERVICE/host.docker.internal:elasticsearch-query-service:8183 - registration status: 204
+2022-08-16 14:32:20 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8183 (http) with context path '/elasticsearch-query-service'
+2022-08-16 14:32:20 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8183
+2022-08-16 14:32:21 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Triggering deferred initialization of Spring Data repositories…
+2022-08-16 14:32:21 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Spring Data repositories initialized!
+2022-08-16 14:32:21 [main] INFO  n.s.e.q.s.ElasticsearchQueryServiceApplication - Started ElasticsearchQueryServiceApplication in 32.281 seconds (JVM running for 34.471)
+2022-08-16 14:37:20 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022-08-16 14:39:39 [http-nio-8183-exec-1] INFO  o.a.c.c.C.[.[.[/elasticsearch-query-service] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-16 14:39:39 [http-nio-8183-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-08-16 14:39:39 [http-nio-8183-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 60 ms
+2022-08-16 14:39:39 [http-nio-8183-exec-1] INFO  n.s.e.q.s.b.i.TwitterQueryUserService - Finding permissions by username app_user
+2022-08-16 14:39:40 [http-nio-8183-exec-1] INFO  n.s.e.q.s.b.i.TwitterElasticsearchQueryService - Querying elasticsearch by text asd
+2022-08-16 14:39:40 [http-nio-8183-exec-1] INFO  n.s.e.util.ElasticsearchQueryUtil - Field from config: text
+2022-08-16 14:39:42 [http-nio-8183-exec-1] ERROR n.s.e.q.s.c.e.h.ElasticsearchQueryServiceErrorHandler - Service runtime exception!
 org.springframework.dao.DataAccessResourceFailureException: Connection refused: no further information; nested exception is java.lang.RuntimeException: Connection refused: no further information
 	at org.springframework.data.elasticsearch.core.ElasticsearchExceptionTranslator.translateExceptionIfPossible(ElasticsearchExceptionTranslator.java:76)
 	at org.springframework.data.elasticsearch.core.ElasticsearchRestTemplate.translateException(ElasticsearchRestTemplate.java:378)
@@ -726,7 +154,7 @@ org.springframework.dao.DataAccessResourceFailureException: Connection refused: 
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
-	at net.serg.elasticsearch.query.service.controller.ElasticsearchDocumentController$$EnhancerBySpringCGLIB$$9f9301c6.getDocumentByText(<generated>)
+	at net.serg.elasticsearch.query.service.controller.ElasticsearchDocumentController$$EnhancerBySpringCGLIB$$95c72eb1.getDocumentByText(<generated>)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -834,8 +262,6 @@ Caused by: java.net.ConnectException: Connection refused: no further information
 	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:221)
 	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
 	... 1 common frames omitted
-2022-08-13 16:55:00 [http-nio-8183-exec-5] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 6778 ms
-2022-08-13 17:15:55 [SpringContextShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-08-13 17:15:55 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
-2022-08-13 17:15:55 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2022-08-13 17:15:55 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2022-08-16 14:42:20 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022-08-16 14:47:20 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022-08-16 14:52:20 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration

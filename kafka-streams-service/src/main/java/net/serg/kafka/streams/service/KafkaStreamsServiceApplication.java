@@ -11,7 +11,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.context.annotation.ComponentScan;
 
-/*@EnableDiscoveryClient*/
+@EnableDiscoveryClient
 @SpringBootApplication
 @ComponentScan(basePackages = {"net.serg"})
 @Slf4j

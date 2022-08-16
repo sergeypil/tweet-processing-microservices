@@ -18,6 +18,7 @@
 		<module>elasticsearch-query-service</module>
         <module>elasticsearch-query-web-client</module>
         <module>kafka-streams-service</module>
+        <module>discovery-service</module>
     </modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -47,6 +48,7 @@
 		<spring-cloud.version>2.2.6.RELEASE</spring-cloud.version>
 		<elasticsearch.version>7.9.1</elasticsearch.version>
 		<springdoc-openapi-ui.version>1.5.0</springdoc-openapi-ui.version>
+		<logstash-logback-encoder.version>6.5</logstash-logback-encoder.version>
 	</properties>
 	<repositories>
 		<repository>
@@ -218,8 +220,21 @@
 				<artifactId>springdoc-openapi-ui</artifactId>
 				<version>${springdoc-openapi-ui.version}</version>
 			</dependency>
+
+			<dependency>
+				<groupId>net.logstash.logback</groupId>
+				<artifactId>logstash-logback-encoder</artifactId>
+				<version>${logstash-logback-encoder.version}</version>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
+
+	<dependencies>
+		<dependency>
+			<groupId>net.logstash.logback</groupId>
+			<artifactId>logstash-logback-encoder</artifactId>
+		</dependency>
+	</dependencies>
 
 	<build>
 		<plugins>
