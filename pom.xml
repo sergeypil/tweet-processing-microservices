@@ -19,6 +19,7 @@
         <module>elasticsearch-query-web-client</module>
         <module>kafka-streams-service</module>
         <module>discovery-service</module>
+        <module>gateway-service</module>
     </modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
