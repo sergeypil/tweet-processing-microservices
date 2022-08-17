@@ -31,11 +31,11 @@ public class GatewayConfig {
         this.gatewayServiceConfigData = configData;
     }
 
-  /*  @Bean(name = "authHeaderResolver")
+    @Bean(name = "authHeaderResolver")
     KeyResolver userKeyResolver() {
         return exchange -> Mono.just(Objects.requireNonNull(exchange
-                .getRequest().getHeaders().getFirst(HEADER_FOR_KEY_RESOLVER)));
-    }*/
+                .getRequest().getId()));
+    }
 
     @Bean
     Customizer<ReactiveResilience4JCircuitBreakerFactory> circuitBreakerFactoryCustomizer() {
