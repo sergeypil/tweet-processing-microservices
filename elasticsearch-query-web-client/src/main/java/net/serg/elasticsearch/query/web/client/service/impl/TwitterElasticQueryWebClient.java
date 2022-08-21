@@ -6,6 +6,7 @@ import net.serg.elasticsearch.query.web.client.exception.ElasticQueryWebClientEx
 import net.serg.elasticsearch.query.web.client.model.ElasticQueryWebClientRequestModel;
 import net.serg.elasticsearch.query.web.client.model.ElasticQueryWebClientResponseModel;
 import net.serg.elasticsearch.query.web.client.service.ElasticQueryWebClient;
+import org.slf4j.MDC;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.HttpMethod;
@@ -18,6 +19,9 @@ import org.springframework.web.reactive.function.client.WebClient;
 import reactor.core.publisher.Mono;
 
 import java.util.List;
+
+import static net.serg.Constants.CORRELATION_ID_HEADER;
+import static net.serg.Constants.CORRELATION_ID_KEY;
 
 @Service
 @Slf4j
@@ -48,6 +52,7 @@ public class TwitterElasticQueryWebClient implements ElasticQueryWebClient {
                 .method(HttpMethod.valueOf(elasticsearchQueryWebClientConfigData.getQueryByText().getMethod()))
                 .uri(elasticsearchQueryWebClientConfigData.getQueryByText().getUri())
                 .accept(MediaType.valueOf(elasticsearchQueryWebClientConfigData.getQueryByText().getAccept()))
+                .header(CORRELATION_ID_HEADER, MDC.get(CORRELATION_ID_KEY))
                 .body(BodyInserters.fromPublisher(Mono.just(requestModel), createParameterizedTypeReference()))
                 .retrieve()
                 .onStatus(

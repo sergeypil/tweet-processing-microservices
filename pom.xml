@@ -20,7 +20,8 @@
         <module>kafka-streams-service</module>
         <module>discovery-service</module>
         <module>gateway-service</module>
-    </modules>
+		<module>mdc-interceptor</module>
+	</modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
@@ -50,6 +51,7 @@
 		<elasticsearch.version>7.9.1</elasticsearch.version>
 		<springdoc-openapi-ui.version>1.5.0</springdoc-openapi-ui.version>
 		<logstash-logback-encoder.version>6.5</logstash-logback-encoder.version>
+		<micrometer-registry-prometheus.version>1.5.2</micrometer-registry-prometheus.version>
 	</properties>
 	<repositories>
 		<repository>
@@ -61,6 +63,11 @@
 	<dependencyManagement>
 		<dependencies>
 			<!-- Local -->
+			<dependency>
+				<groupId>net.serg</groupId>
+				<artifactId>mdc-interceptor</artifactId>
+				<version>${project.version}</version>
+			</dependency>
 			<dependency>
 				<groupId>net.serg</groupId>
 				<artifactId>common-util</artifactId>
@@ -221,11 +228,15 @@
 				<artifactId>springdoc-openapi-ui</artifactId>
 				<version>${springdoc-openapi-ui.version}</version>
 			</dependency>
-
 			<dependency>
 				<groupId>net.logstash.logback</groupId>
 				<artifactId>logstash-logback-encoder</artifactId>
 				<version>${logstash-logback-encoder.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>io.micrometer</groupId>
+				<artifactId>micrometer-registry-prometheus</artifactId>
+				<version>${micrometer-registry-prometheus.version}</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
